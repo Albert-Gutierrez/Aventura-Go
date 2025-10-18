@@ -1,26 +1,6 @@
-/* Variables según Manual de Identidad Visual */
-:root {
-    /* Paleta de colores oficial */
-    --color-primary: #2D4059;    /* Azul oscuro principal */
-    --color-secondary: #EA8217;  /* Naranja corporativo */
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-text: #333333;
-    --color-text-light: #666666;
-    --color-bg-light: #F8F9FA;
-    --color-border: #E0E0E0;
-    
-    /* Tipografías oficiales */
-    --font-titles: 'Raleway', sans-serif;
-    --font-text: 'Lato', sans-serif;
-    
-    /* Sombras */
-    --shadow: 0 4px 12px rgba(45, 64, 89, 0.1);
-    --shadow-hover: 0 8px 20px rgba(45, 64, 89, 0.15);
-}
 
-/* Importar fuentes de Google */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap');
+
+
 
 /* Reset y estilos base */
 * {
