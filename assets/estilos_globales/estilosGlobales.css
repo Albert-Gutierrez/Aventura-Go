@@ -26,17 +26,30 @@
 }
 
 
-/*estilos boton primario*/
-button {
+/* ESTILOS BOTON PRINCIPAL (COLOR AZUL)............................................*/
+button.principal {
+    border-radius: 20px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    border-color: transparent;
+}
+
+button.principal:hover {
+    transform: scale(1.05);
+    box-shadow:   0 0px 5px 0 #EA8217;
+}
+
+/* ESTILOS BOTON SECUNDARIO (COLOR NARANJA)............................................... */
+button.secundario {
     border-radius: 20px;
     background: var(--color-secondary);
     color: var(--color-white);
     cursor: pointer;
     border-color: transparent;
-
 }
 
-button:hover {
+button.secundario:hover {
     transform: scale(1.05);
-    box-shadow:  10 8px 20px rgb(255, 0, 0);
+    box-shadow:   0 0px 5px 0 #2D4059;
 }
