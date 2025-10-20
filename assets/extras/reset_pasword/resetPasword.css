@@ -1,6 +1,4 @@
-/* ==============================
-   FUENTES OFICIALES
-================================= */
+
 
 /* Fuente para títulos */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap');
@@ -8,9 +6,8 @@
 /* Fuente para textos */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* ==============================
-   VARIABLES SEGÚN IDENTIDAD VISUAL
-================================= */
+
+
 :root {
   /* Paleta de colores */
   --color-primary: #2D4059;     /* Azul oscuro principal */
@@ -31,9 +28,7 @@
   --shadow-hover: 0 8px 20px rgba(45, 64, 89, 0.15);
 }
 
-/* ==============================
-   RESETEO Y BASE
-================================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,19 +46,18 @@ body {
   background-color: var(--color-bg-light);
 }
 
-/* Fondo como imagen real */
 .fondo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 101%;
-  object-fit: cover;          /* rellena toda la pantalla */
+  object-fit: cover;         
   filter: blur(3px) brightness(0.5); /* desenfoque + oscurecimiento */
-  z-index: -1;                /* va detrás de todo */
+  z-index: -1;              
 }
 
-/* Tarjeta */
+
 .contenedor {
   position: relative;
   display: flex;
@@ -74,14 +68,12 @@ body {
   overflow: hidden;
   width: 870px;
   box-shadow: var(--shadow-hover);
-  z-index: 1; /* se asegura de estar por encima */
+  z-index: 1; 
   backdrop-filter: blur(3px);
   margin: auto;
 }
 
-/* ==============================
-   FORMULARIO
-================================= */
+
 .formulario {
   flex: 1;
   padding: 50px 40px;
@@ -163,8 +155,8 @@ h2 {
 .imagen img {
   width: 100%;
   height: 110%;
-  object-fit: cover !important; /* rellena completamente el espacio */
-  border-radius: 0; /* quita bordes redondeados internos */
+  object-fit: cover !important; 
+  border-radius: 0; 
   box-shadow: none;
   transition: transform 0.5s ease;
 }
