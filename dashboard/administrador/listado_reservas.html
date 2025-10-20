@@ -53,7 +53,7 @@
             </div>
 
             <a href="" id="perfil">
-                <img src="" alt="">
+                <img src="../../assets/dashboard/administrador/img/perfil.png" alt="persona">
                 <p>AR-Ana</p>
                 <i class="bi bi-caret-down-fill"></i>
             </a>
@@ -62,14 +62,14 @@
 
         <div class="info">
             <form action="busqueda">
-                <input type="text">
+                <input type="text" >
                 <i class="bi bi-search"></i>
-
-                <i class="bi bi-moon-fill"></i>
-
-                <i class="bi bi-bell-fill"></i>
-
-                <button><a href="">Cerrar Sesión</a></button>
+                
+                <button id="estilo"><i class="bi bi-moon-fill"></i></button>
+                
+                <button id="estilo"><i class="bi bi-bell-fill"></i></button>
+        
+                <button id="cerrar"><a href="">Cerrar Sesión</a></button>
             </form>
 
             <h1>Listado de Reservas</h1>
@@ -94,26 +94,29 @@
             </div>
 
             <div class="lista">
-                <thead>
-                    <tr>
-                        <td>Reserva #</td>
-                        <td>Fecha</td>
-                        <td>Cliente</td>
-                        <td>Experiencia</td>
-                        <td>Monto</td>
-                        <td>Estado</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>17 Sept</td>
-                        <td>Juan Perez</td>
-                        <td>Experiencia</td>
-                        <td>$160</td>
-                        <td><button>Confirmada</button>/td>
-                    </tr>
-                </tbody>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Reserva #</td>
+                            <td>Fecha</td>
+                            <td>Cliente</td>
+                            <td>Experiencia</td>
+                            <td>Monto</td>
+                            <td>Estado</td>
+                        </tr>
+                    </thead>
+                 
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>17 Sept</td>
+                            <td>Juan Perez</td>
+                            <td>Experiencia</td>
+                            <td>$160</td>
+                            <td><button>Confirmada</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
