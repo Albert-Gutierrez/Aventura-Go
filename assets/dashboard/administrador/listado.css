@@ -28,6 +28,8 @@ body {
 
 .panel>img {
     width: 150px;
+    margin: 0 auto 40px auto;  /* Centra horizontalmente */
+    display: block;
     margin-bottom: 40px;
 }
 
@@ -54,13 +56,14 @@ body {
 }
 
 .items a img {
-    width: 24px;
-    height: 24px;
+    width: 23px;
+    height: 23px;
 }
 
 .items a p {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 /* Perfil en el panel */
@@ -95,14 +98,13 @@ body {
 /* ========== CONTENIDO PRINCIPAL ========== */
 .info {
     flex-grow: 1;
-    padding: 30px 40px;
+    padding: 15px 40px;
     background-color: #f5f7fa;
 }
 
-form{
+form {
     position: relative;
-    margin-bottom: 30px;
-    padding: 15px 20px;
+    padding: 10px 0 20px;
 }
 
 form input {
@@ -118,14 +120,14 @@ form input {
 }
 
 form .bi-search {
-    position: absolute;  /* ← Para poder usar left/right */
-    bottom: 43px;
-    left: 627px;          /* ← Ahora sí funciona */
+    position: absolute;
+    bottom: 49px;
+    left: 605px;
     font-size: 18px;
     pointer-events: none;
 }
 
-#estilo{
+#estilo {
     margin-left: 10px;
     padding: 7px 20px;
     background-color: #DEE6F2;
@@ -137,7 +139,7 @@ form .bi-search {
 
 form .bi-moon-fill,
 form .bi-bell-fill {
-    color: #34495e;
+    color: #000000;
     font-size: 20px;
     cursor: pointer;
 }
@@ -161,7 +163,7 @@ form button a {
 /* Título principal */
 .info h1 {
     font-size: 28px;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 25px;
 }
 
@@ -173,32 +175,41 @@ form button a {
     margin-bottom: 30px;
     padding: 25px;
     background-color: #DEE6F2;
+;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.formulario .campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ESTO centra los elementos */
+    gap: 10px;
+    width: 100%;
+}
+
 .formulario h3 {
-    font-size: 13px;
-    color: #7f8c8d;
+    font-size: 20px;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: capitalize;
 }
 
 .formulario button {
+    width: 57%;
     padding: 12px 20px;
     background-color: #ff8c42;
     color: white;
     border: none;
     border-radius: 8px;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 20px;
     cursor: pointer;
     text-align: left;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s ease;
+    justify-content: center;
 }
 
 .formulario button:hover {
@@ -253,9 +264,9 @@ form button a {
 }
 
 .lista thead td {
-    font-weight: 700;
-    font-size: 13px;
-    color: #2c3e50;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -274,15 +285,15 @@ form button a {
 }
 
 .lista tbody td {
-    font-size: 14px;
-    color: #34495e;
+    font-size: 20px;
+    color: #000000;
 }
 
 /* Botón de estado */
 .lista tbody td button {
     padding: 8px 16px;
     background-color: #2ecc71;
-    color: white;
+    color: #000000;
     border: none;
     border-radius: 6px;
     font-weight: 600;
