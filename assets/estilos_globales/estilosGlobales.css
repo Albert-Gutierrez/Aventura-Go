@@ -28,10 +28,6 @@
 
 
 
-
-
-
-/* OJO ESTILOS GLOBALES PARA EL HEADER NAV DE TODAS LAS PAGINAS/-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap');
 
@@ -47,7 +43,7 @@
     --font-text: 'Lato', sans-serif;
 }
 
-/* --- NAVBAR GENERAL --------------------------------------------------------------------------------------------------------- */
+/*  NAVBAR GENERAL */
 header {
     background-color: var(--color-white);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -68,12 +64,13 @@ header {
     justify-content: space-between;
 }
 
-/* --- LOGO -------------------------------------------------------------------------------------------------------------- */
+/*LOGO  */
 .navbar-logo {
     width: 120px;
+    margin-left: 45px; 
 }
 
-/* --- LINKS PRINCIPALES -------------------------------------------------------------------------------------------------- */
+/* LINKS PRINCIPALES */
 .navbar-nav {
     list-style: none;
     display: flex;
@@ -111,14 +108,15 @@ header {
     border-radius: 5px;
 }
 
-/* --- BOTONES --------------------------------------------------------------------------------------------------------------- */
+/* BOTONES */
 .actions {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-right: 70px; 
 }
 
-.btn-login{
+.btn-login {
     background-color: var(--color-primary);
     color: var(--color-white);
     font-family: var(--font-titles);
@@ -130,7 +128,7 @@ header {
     transition: all 0.3s ease;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     transform: scale(1.05);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
 }
@@ -152,7 +150,7 @@ header {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* --- ICONO MENÚ MÓVIL ------------------------------------------------------------------------------------------------ */
+/* ICONO MENÚ MÓVIL  */
 .menu-toggle {
     display: none;
     font-size: 22px;
@@ -160,104 +158,6 @@ header {
     cursor: pointer;
 }
 
-
-/*HEADER Responsive específico para iPhone 14 Pro Max (430x932) */
-@media screen and (max-width: 430px) {
-
-    /* Contenedor general */
-    .navbar .container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 8px 16px;
-    }
-
-    /* Logo */
-    .navbar-logo {
-        width: 110px;
-        height: auto;
-    }
-
-    /* Ocultar menú por defecto */
-    .navbar-nav {
-        display: none;
-        position: absolute;
-        top: 65px;
-        right: 20px;
-        width: 230px;
-        background-color: var(--color-white);
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-        border-radius: 12px;
-        flex-direction: column;
-        gap: 10px;
-        padding: 16px;
-        z-index: 999;
-    }
-
-    /* Mostrar menú cuando se activa */
-    .navbar-nav.show {
-        display: flex;
-        animation: slideDown 0.3s ease forwards;
-    }
-
-    @keyframes slideDown {
-        from {opacity: 0; transform: translateY(-10px);}
-        to {opacity: 1; transform: translateY(0);}
-    }
-
-    /* Estilos de enlaces */
-    .nav-link {
-        color: var(--color-text);
-        font-family: var(--font-text);
-        font-size: 15px;
-        text-align: left;
-        padding: 6px 10px;
-        transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-        color: var(--color-secondary);
-    }
-
-    /* Botones de acción */
-    .actions {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .btn-login,
-    .btn-register {
-        font-size: 13px;
-        padding: 6px 10px;
-        border-radius: 8px;
-    }
-
-    .btn-login {
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        border: none;
-    }
-
-    .btn-register {
-        background-color: var(--color-secondary);
-        color: var(--color-white);
-        border: none;
-    }
-
-    /* Ícono de menú */
-    .menu-toggle {
-        display: block;
-        font-size: 22px;
-        color: var(--color-primary);
-        cursor: pointer;
-    }
-
-    /* Ícono de búsqueda oculto para evitar saturación visual */
-    .search-icon {
-        display: none;
-    }
-}
 
 /* ACA TERMINA HEADER.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
 
