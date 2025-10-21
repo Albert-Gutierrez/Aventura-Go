@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventura Go - index</title>
-    <!-- Íconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Tema opcional slick carrousel -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- LIBRERIA AOS ANIMATE -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/website_externos/index/index.css">
 </head>
 
 <body>
+
 
     <header>
         <nav class="navbar">
@@ -36,6 +48,7 @@
                         <a href="extras/login.html" class="btn-login">Ingresa</a>
                         <a href="extras/registrarse.html" class="btn-register">Regístrate</a>
 
+                        <!-- menu hambirguesa en responsive -->
                         <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
                             <i class="fas fa-bars"></i>
                         </div>
@@ -49,6 +62,7 @@
             </div>
         </nav>
     </header>
+
 
 
     <!-- Sección Hero -->
@@ -75,7 +89,6 @@
             </div>
         </div>
     </section>
-
 
 
 
@@ -139,43 +152,166 @@
 
 
 
+    <section id="testimonios">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Sección Testimonios -->
-    <!-- <section id="testimonials">
         <div class="container">
-            <h2>Que opinan nuestros usuarios?</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <h4>Kristin Krause</h4>
-                    <p>"sąd un pamélo"</p>
+
+            <div class="row">
+
+                <!-- Título-->
+                <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                    <h2>Que opinan nuestros usuarios?</h2>
                 </div>
-                <div class="testimonial-card">
-                    <h4>Kristin Krause</h4>
-                    <p>"sąd un pamélo."</p>
-                </div>
-                <div class="testimonial-card">
-                    <h4>Kristin Krause</h4>
-                    <p>"sąd un pamélo."</p>
+
+                <!-- flecha prev -->
+                <div class="testimonios-wrapper">
+                    <button class="slick-prev"><i class="fas fa-chevron-left"></i></button>
+
+                    <!-- Contenido principal -->
+                    <div class="col-12 col-md-10">
+                        <div class="slider-testimonios">
+
+                            <!-- Card 1 -->
+                            <div class="card-testimonio">
+                                <div class="cont-img">
+                                    <img src="assets/website_externos/index/img/index_foto_opiniones.png"
+                                        alt="foto mujer">
+                                </div>
+                                <div class="cont-info">
+                                    <h3>Kristin Krause</h3>
+                                    <p>"Gracias a Aventura Go viví una experiencia increíble en Villeta. Todo el proceso
+                                        fue
+                                        claro y confiable, y las actividades estaban muy bien seleccionadas. Se nota que
+                                        trabajan con guías locales comprometidos con el turismo responsable."</p>
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="card-testimonio">
+                                <div class="cont-img">
+                                    <img src="assets/website_externos/index/img/index_foto_opiniones.png"
+                                        alt="foto mujer">
+                                </div>
+                                <div class="cont-info">
+                                    <h3>Alejandro Catro </h3>
+                                    <p>"Aventura Go superó mis expectativas. Reservar fue muy fácil y todo el viaje
+                                        estuvo
+                                        perfectamente organizado. Me encantó la atención personalizada y la seguridad
+                                        que
+                                        ofrecen en cada actividad. Sin duda volveré a usar la plataforma para mi próxima
+                                        escapada."</p>
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="card-testimonio">
+                                <div class="cont-img">
+                                    <img src="assets/website_externos/index/img/index_foto_opiniones.png"
+                                        alt="foto mujer">
+                                </div>
+                                <div class="cont-info">
+                                    <h3>claudia Sachica</h3>
+                                    <p>"Me encantó la flexibilidad de Aventura Go. Pude elegir las experiencias que más
+                                        se
+                                        adaptaban a mi tiempo y presupuesto. La interfaz es intuitiva y el servicio al
+                                        cliente excelente. ¡Recomendado al 100%!"</p>
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="card-testimonio">
+                                <div class="cont-img">
+                                    <img src="assets/website_externos/index/img/index_foto_opiniones.png"
+                                        alt="foto mujer">
+                                </div>
+                                <div class="cont-info">
+                                    <h3>Juana Mendoza</h3>
+                                    <p>"Gracias a Aventura Go viví una experiencia increíble en Villeta. Todo el proceso
+                                        fue
+                                        claro y confiable, y las actividades estaban muy bien seleccionadas. Se nota que
+                                        trabajan con guías locales comprometidos con el turismo responsable."</p>
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="card-testimonio">
+                                <div class="cont-img">
+                                    <img src="assets/website_externos/index/img/index_foto_opiniones.png"
+                                        alt="foto mujer">
+                                </div>
+                                <div class="cont-info">
+                                    <h3>Alberto Gongora</h3>
+                                    <p>"Me encantó la flexibilidad de Aventura Go. Pude elegir las experiencias que más
+                                        se
+                                        adaptaban a mi tiempo y presupuesto. La interfaz es intuitiva y el servicio al
+                                        cliente excelente. ¡Recomendado al 100%!G."</p>
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- flecha next -->
+            <button class="slick-next"><i class="fas fa-chevron-right"></i></button>
         </div>
-    </section> -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Footer -->
     <!-- <footer id="footer">
@@ -225,7 +361,18 @@
     </footer> -->
 
 
+
+
+    <!-- JavaScript de Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <script src="assets/website_externos/index/index.js"></script>
+
 </body>
 
 </html>
