@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    background: url('../assets/extras/login/img/Rectangle\ 179.png') no-repeat center center/cover;
+    background: url('img/Rectangle\ 179.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
