@@ -239,7 +239,7 @@ header {
     padding: 7px 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 330px;
+    width: 245px;
 }
 
 #hero .search-item strong {
@@ -258,6 +258,7 @@ header {
     font-family: var(--font-text);
     font-size: 13px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 #hero .search-btn:hover {
