@@ -429,8 +429,9 @@ header {
 }
 
 
-/* SECCIÓN TESTIMONIOS----------------------------------------------------------------------------------------------------------------- */
 
+
+/* SECCIÓN TESTIMONIOS----------------------------------------------------------------------------------------------------------------- */
 #testimonios {
     background-color: var(--color-bg-light);
     padding: 80px 0;
@@ -459,7 +460,6 @@ header {
 .slider-testimonios {
     width: 100%;
     max-width: 1120px;
-    /* controla el ancho del conjunto */
     margin: 0 auto;
     padding: 20px 0 10px;
 }
@@ -475,9 +475,7 @@ header {
 /* TARJETA (estilo visual) */
 .card-testimonio {
     width: 320px;
-    /* ancho fijo de la tarjeta */
     min-height: 420px;
-    /* altura aproximada para igual apariencia */
     background: var(--color-white);
     border-radius: 14px;
     padding: 36px 28px 28px;
@@ -489,10 +487,8 @@ header {
     transition: transform .28s ease, box-shadow .28s ease;
     box-sizing: border-box;
     margin: 10px 8px;
-    /* separación entre slides */
 }
 
-/* Hover */
 .card-testimonio:hover {
     transform: translateY(-8px);
     box-shadow: 0 18px 40px rgba(45, 64, 89, 0.12);
@@ -527,11 +523,9 @@ header {
     font-family: var(--font-text);
     font-size: 14px;
     color: #555;
-    /* tono ligeramente más suave que var(--color-text) */
     line-height: 1.6;
     margin: 0 0 20px;
     flex: 1 0 auto;
-    /* para que el párrafo ocupe el espacio y empuje las estrellas abajo */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -549,13 +543,12 @@ header {
     letter-spacing: 4px;
 }
 
-/* Alinea las estrellas al fondo de la tarjeta */
 .card-testimonio .star {
     margin-top: 12px;
     margin-bottom: 0;
 }
 
-/* Slick dots (puntos) - centrados y con color secundario */
+/* Slick dots (puntos) */
 .slick-dots {
     display: flex !important;
     justify-content: center;
@@ -584,13 +577,13 @@ header {
     opacity: 1;
 }
 
-/* Opcional: ocultar flechas por defecto si usas solo dots */
-.slick-arrow {
-    display: none !important;
+/* Contenedor general del carrusel */
+.testimonios-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
 
 
 
