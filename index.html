@@ -32,8 +32,15 @@
 
                 <!-- Botones y menú móvil -->
                 <div class="actions">
-                    <button class="btn-login">Ingresa</button>
-                    <button class="btn-register">Regístrate</button>
+                    <div class="actions">
+                        <a href="extras/login.html" class="btn-login">Ingresa</a>
+                        <a href="extras/registrarse.html" class="btn-register">Regístrate</a>
+
+                        <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+
 
                     <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
                         <i class="fas fa-bars"></i>
@@ -74,16 +81,18 @@
 
     <!-- Sección Características -->
     <section id="Caracteristicas">
-        <div class="container">
-            <h2>Lo que hace diferente a Aventura Go</h2>
-            <p class="subtitle">Más que un viaje, una experiencia para recordar</p>
 
-            <div class="row">
+        <h2>Lo que hace diferente a Aventura Go</h2>
+        <p class="subtitle">Más que un viaje, una experiencia para recordar</p>
+
+        <div class="container">
+            <div class="row justify-content-center"> <!-- Añadí justify-content-center -->
 
                 <!-- Card 1 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="feature-card1 p-4 shadow-sm">
-                        <img src="assets/website_externos/index/img/caracteristicas_icono_reserva.png" alt="logo1" class="icono">
+                <div class="col-12 col-md-4 mb-4 d-flex"> <!-- Añadí d-flex -->
+                    <div class="feature-card1 p-4 shadow-sm w-100"> <!-- Añadí w-100 -->
+                        <img src="assets/website_externos/index/img/caracteristicas_icono_reserva.png" alt="logo1"
+                            class="icono">
                         <h3>Aventura Go</h3>
                         <h4>Reserva con confianza</h4>
                         <p>Disfruta experiencias seguras y respaldadas por prestadores locales certificados.</p>
@@ -93,9 +102,10 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="feature-card2 p-4 shadow-sm">
-                        <img src="assets/website_externos/index/img/caracteristicas_icono_reserva2.png" alt="logo2" class="icono">
+                <div class="col-12 col-md-4 mb-4 d-flex"> <!-- Añadí d-flex -->
+                    <div class="feature-card2 p-4 shadow-sm w-100"> <!-- Añadí w-100 -->
+                        <img src="assets/website_externos/index/img/caracteristicas_icono_reserva2.png" alt="logo2"
+                            class="icono">
                         <h3>Aventura Go</h3>
                         <h4>Aventura sin complicaciones</h4>
                         <p>Nos encargamos de los detalles para que tú solo vivas la emoción de viajar.</p>
@@ -105,9 +115,10 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="feature-card3 p-4 shadow-sm">
-                        <img src="assets/website_externos/index/img/caracteristicas_icono_reserva3.png" alt="logo3" class="icono">
+                <div class="col-12 col-md-4 mb-4 d-flex"> <!-- Añadí d-flex -->
+                    <div class="feature-card3 p-4 shadow-sm w-100"> <!-- Añadí w-100 -->
+                        <img src="assets/website_externos/index/img/caracteristicas_icono_reserva3.png" alt="logo3"
+                            class="icono">
                         <h3>Aventura Go</h3>
                         <h4>Opciones flexibles</h4>
                         <p>Elige entre distintos destinos y actividades para adaptar tu viaje a tu medida.</p>
@@ -115,16 +126,34 @@
                             class="img-fluid rounded-circle mt-3">
                     </div>
                 </div>
-            </div>
 
-            <div class="features-description mt-4">
-                <p>En Aventura Go te ofrecemos experiencias auténticas que combinan naturaleza, emoción y cultura local.
-                </p>
-                <p>Trabajamos de la mano con prestadores de la región, garantizando seguridad, flexibilidad y un turismo
-                    responsable que deja huella positiva en cada destino.</p>
             </div>
         </div>
+
+        <div class="features-description mt-4">
+            <p>En Aventura Go te ofrecemos experiencias auténticas que combinan naturaleza, emoción y cultura local.</p>
+            <p>Trabajamos de la mano con prestadores de la región, garantizando seguridad, flexibilidad y un turismo
+                responsable que deja huella positiva en cada destino.</p>
+        </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- Sección Testimonios -->
