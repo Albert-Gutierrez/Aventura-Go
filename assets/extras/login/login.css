@@ -1,0 +1,153 @@
+/* Fuente general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background: url('/assets/extras/login/img/Rectangle\ 179.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.login-container {
+    width: 80%;
+    max-width: 1600px;
+}
+
+/* Caja principal del login */
+.login-box {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    min-height: 600px;
+}
+
+/* Sección izquierda (formulario) */
+.form-section {
+    flex: 1.2;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    margin: 0 auto 20px;
+}
+
+h2 {
+    color: #1d3557;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Campos de texto */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    text-indent: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Contenedor del campo contraseña con icono */
+.password-container {
+    position: relative;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+}
+
+/* Botón */
+button {
+    background-color: #EA8217;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #EA8217;
+}
+
+/* Enlace registro */
+.register-text {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.register-text a {
+    color: #1d3557;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Sección derecha (imagen) */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 96%;
+    height: 96%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* --- Mantenemos el CSS anterior --- */
+
+/* Enlaces de registro y recuperar contraseña */
+.extra-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espacio entre los dos textos */
+    margin-top: 15px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    /* para que se acomode en pantallas pequeñas */
+}
+
+.extra-links a {
+    color: #1d3557;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+    color: #EA8217;
+    /* color naranja de tu marca */
+}
