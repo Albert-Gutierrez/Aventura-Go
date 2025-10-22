@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Usuario</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Icono de bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Estilos CSS -->
@@ -70,44 +73,67 @@
 
                 <button id="estilo"><i class="bi bi-bell-fill"></i></button>
 
-                <button id="cerrar"><a href="">Cerrar Sesión</a></button>
             </form>
 
-            <div class="usuario">
-                <h2>Perfil de Usuario</h2>
-                <img src="../../assets/dashboard/administrador/img/perfil-usuario.png" alt="persona"><i
-                    class="bi bi-pen-fill"></i>
-                <h3>ANDRES RODRIGUEZ</h3>
-                <p>andresito22@gmail .com</p>
+            <div class="container">
+                <div class="row">
 
-                <button>INFORMACIÓN PERSONAL</button>
-                <button>CONTRASEÑA Y SEGURIDAD</button>
-                <button>CERRAR SESION</button>
+                    <div class="usuario">
+                        <h2>Perfil de Usuario</h2>
+                        <img src="../../assets/dashboard/administrador/img/perfil-usuario.png" alt="persona"><i
+                            class="bi bi-pen-fill"></i>
+                        <h3>ANDRES RODRIGUEZ</h3>
+                        <p>andresito22@gmail .com</p>
+
+                        <button>INFORMACIÓN PERSONAL</button>
+                        <button>CONTRASEÑA Y SEGURIDAD</button>
+                        <button><a href="../../index.html">CERRAR SESIÓN</a></button>
+                    </div>
+
+                    <form action="datos" id="datos">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Nombres</h4>
+                                <input type="text" placeholder="Andres Felipe">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Apellidos</h4>
+                                <input type="text" placeholder="Rodriguez Rodriguez">
+                            </div>
+
+                            <div class="col-md-12">
+                                <h4>Correo</h4>
+                                <input type="text" id="espacio" placeholder="andresito22@gmail.com">
+                            </div>
+                            <div class="col-md-12">
+                                <h4>Direccion</h4>
+                                <input type="text" id="espacio" placeholder="Cra 1 N*3-22 Sur">
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>Telefono</h4>
+                                <input type="text" placeholder="3204567894">
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Fecha de nacimiento</h4>
+                                <input type="text" placeholder="andresito22@gmail.com"><i class="bi bi-calendar3"></i>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h4>Ubicación</h4>
+                                <input type="text" placeholder="Bogotá, Colombia">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
             </div>
 
-            <form action="datos" id="datos">
-                <h4>Nombres</h4>
-                <input type="text" placeholder="Andres Felipe">
 
-                <h4>Apellidos</h4>
-                <input type="text" placeholder="Rodriguez Rodriguez">
 
-                <h4>Correo</h4>
-                <input type="text" placeholder="andresito22@gmail.com">
 
-                <h4>Direccion</h4>
-                <input type="text" placeholder="Cra 1 N*3-22 Sur">
-
-                <h4>Telefono</h4>
-                <input type="text" placeholder="3204567894">
-
-                <h4>Fecha de nacimiento</h4>
-                <input type="text" placeholder="andresito22@gmail.com"><i class="bi bi-calendar3"></i>
-
-                <h4>Ubicación</h4>
-                <input type="text" placeholder="Bogotá, Colombia">
-
-            </form>
 
             <div class="botones">
                 <button>Descartar Cambios</button>
@@ -117,6 +143,12 @@
         </div>
 
     </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 
