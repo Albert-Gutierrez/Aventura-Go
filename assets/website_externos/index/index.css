@@ -589,57 +589,162 @@ header {
 
 
 
+/* E S T I L O S    F O O T E R----------------------------------------------------------------------------------------------------------------------------------- */
+/* footer superior */
+.footer-top {
+    width: 100%;
+    align-content: center;
+    background-color: #2D4059;
+    color: white;
+    padding: 30px 0;
+}
 
 
+.footer-top .row .col-md-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer-top h2 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    margin-left: 110px;
+    margin-right: -30px;
 
+}
 
+.footer-top a {
+    background-color: #EA8217;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 38px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-right: 150px;
+}
 
+.footer-top a:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
 
+/* FOOTER INFERIOR------------------------------------------------------------------------ */
+.footer-bottom {
+    background-color: var(--color-bg-light);
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+}
 
+.footer-bottom .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
 
+/* Cada columna ocupa espacio automático */
+.footer-bottom .col-md-2 {
+    flex: 1;
+    min-width: 0; /* Permite que se ajusten */
+}
 
+/* Logo  */
+.logo-section img {
+   max-width: 230px;
+    margin-bottom: 0px;
+    margin-top: 43px;
+    margin-left: -6px;
+    width: 115%;
+}
 
+/* y descripción */
+.description {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-text);
+    margin-top: 33px;
+    margin-left: -22px;
+    margin-right: -63px;
+}
 
+/* Títulos */
+.dest-section,
+.enlaces-section,
+.contacto-section,
+.redes-section {
+    font-family: 'lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-left: 60px;
+    
+}
 
+/* Listas */
+.footer-bottom .list-unstyled li {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: var(--color-text);
+    margin-left: 35px;
+    margin-right: -40px;
+}
 
+.footer-bottom .list-unstyled a {
+    color: var(--color-text);
+    text-decoration: none;
+}
 
+.footer-bottom .list-unstyled a:hover {
+    color: #EA8217;
+}
 
+/* Contactos */
+.contact-list li {
+    font-size: 12px;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
 
+/* Redes sociales en fila */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+}
 
+.social-links a {
+    color: var(--color-primary);
+    font-size: 16px;
+    text-decoration: none;
+}
 
+.social-links a:hover {
+    color: #EA8217;
+}
 
+/* Responsive: cuando ya no cabe, se rompe */
+@media (max-width: 992px) {
+    .footer-bottom .row {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer-bottom .col-md-3,
+    .footer-bottom .col-md-2 {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
 
 
 
@@ -661,7 +766,7 @@ header {
 /* RESPONSIVE PARA IPHONE 14 PRO MAX - 430px */
 @media screen and (max-width: 430px) {
 
-    /* ========== HEADER RESPONSIVE ========== */
+    /* HEADER RESPONSIVE ------------------------------------------------------------------------------------------------ */
     .navbar {
         padding: 8px 16px;
     }
@@ -737,7 +842,7 @@ header {
         font-size: 20px;
     }
 
-    /* ========== HERO RESPONSIVE ========== */
+    /* HERO RESPONSIVE------------------------------------------------------------------------------------------------------------------*/
     #hero {
         margin-top: 60px;
         height: auto;
@@ -826,7 +931,7 @@ header {
         font-size: 12px;
     }
 
-    /* ========== CARACTERÍSTICAS RESPONSIVE ========== */
+    /*CARACTERÍSTICAS RESPONSIVE------------------------------------------------------------------------------------------------------- */
     #Caracteristicas {
         padding: 40px 0;
     }
