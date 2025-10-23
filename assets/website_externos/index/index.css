@@ -1168,7 +1168,7 @@ header {
 
         .footer-bottom .col-md-2 {
             width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 0;
             text-align: center;
         }
 
@@ -1179,7 +1179,7 @@ header {
 
         .description {
             max-width: 100%;
-            margin: 15px 0;
+            margin: 0 10px;
             font-size: 14px;
             line-height: 1.5;
             padding: 0 10px;
