@@ -14,6 +14,18 @@
     --font-text: 'Lato', sans-serif;
 }
 
+/* Elimina el scroll horizontal global */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    /*evita que ciertos elementos con position: absolute (como los del carrusel) se salgan del flujo del documento.S*/
+}
 
 
 /*  NAVBAR ___________________________________________________________________________________________________________ */
@@ -28,10 +40,10 @@ header {
 }
 
 .navbar {
-    padding: 10px 40px;
+    padding: 12px 0px;
 }
 
-.container {
+.navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,8 +51,7 @@ header {
 
 /*LOGO  */
 .navbar-logo {
-    width: 120px;
-    margin-left: 45px;
+    margin-left: 0;
 }
 
 /* LINKS PRINCIPALES */
@@ -50,6 +61,7 @@ header {
     gap: 28px;
     margin: 0;
     padding: 0;
+    flex-direction: row;
 }
 
 .nav-link {
@@ -86,7 +98,7 @@ header {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-right: 70px;
+    margin-right: 10px;
 }
 
 .btn-login {
@@ -136,95 +148,100 @@ header {
 
 
 /* SECCIÓN HERO____________________________________________________________________________________________________   */
-
 #hero {
     position: relative;
-    width: 100%;
-    height: 100%;
-    margin-top: 70px;
-    /* para que no quede oculto debajo del header */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-titles);
+    margin-left: 0;
+    padding-right: 0;
+    margin-top: 80px;
 }
 
-/* Imagen de fondo */
-#hero .hero-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-    filter: brightness(0.6);/* oscurece la imagen */
-    display: block;
-}
-
-/* Contenedor general */
-#hero .hero-content {
-    position: relative;
-    text-align: left;
-    color: var(--color-white);
-    width: 100%;
-    max-width: 1345px;
+#hero .carousel {
+    border-radius: 25px;
     overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Título */
-#hero .hero-content h1 {
+/* Imágenes del carrusel */
+#hero .carousel-item img {
+    object-fit: cover;
+    filter: brightness(40%);
+    max-height: 700px;
+}
+
+/* Contenido superpuesto */
+#hero .carousel-caption {
     position: absolute;
-    top: 15%;
-    left: 6%;
-    font-size: 62px;
+    top: 43%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #FFFFFF;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Titulares principales */
+#hero .carousel-caption h1,
+#hero .carousel-caption h2 {
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
-#hero .hero-content h2 {
-    position: absolute;
-    top: 26%;
-    left: 6%;
-    font-size: 62px;
-    font-weight: 800;
-    line-height: 1.2;
+#hero .carousel-caption h1 {
+    font-size: 78px;
 }
 
-/* Párrafo */
-#hero .hero-content .parrafo1 {
-    position: absolute;
-    top: 44%;
-    left: 6%;
-    font-family: var(--font-text);
-    font-size: 15px;
-    line-height: 1.4;
-    color: var(--color-white);
-    max-width: 800px;
+#hero .carousel-caption h2 {
+    font-size: 78px;
+    margin-bottom: 20px;
 }
 
-/* Párrafo */
-#hero .hero-content .parrafo2 {
-    position: absolute;
-    top: 47%;
-    left: 6%;
-    font-family: var(--font-text);
-    font-size: 15px;
-    line-height: 1.4;
-    color: var(--color-white);
-    max-width: 900px;
+/* Párrafos */
+#hero .carousel-caption p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
 }
 
-/* Marca AVENTURA GO */
-#hero .brand {
-    position: absolute;
-    bottom: 200px;
-    right: 300px;
-    text-align: right;
+/* === Estilos flechas del carrusel === */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    font-size: 30px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#hero .brand h2 {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 1;
-    color: var(--color-white);
+/* Quitar los íconos por defecto de Bootstrap */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+}
+
+/* Insertar texto con pseudo-elementos */
+.carousel-control-prev::before {
+    content: "<";
+}
+
+.carousel-control-next::before {
+    content: ">";
+}
+
+/* Posicionamiento */
+.carousel-control-prev {
+    left: 5px;
+}
+
+.carousel-control-next {
+    right: 5px;
 }
 
 /* Caja de búsqueda */
@@ -233,38 +250,56 @@ header {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--color-white);
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 10px 25px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 7px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 245px;
+    gap: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    width: fit-content;
 }
 
-#hero .search-item strong {
-    font-family: var(--font-text);
-    color: var(--color-text);
+#hero .search-box strong {
+    color: #2B2B2B;
+    font-size: 18px;
     font-weight: 600;
+    font-family: 'Lato', sans-serif;
 }
 
 #hero .search-btn {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    border: none;
-    padding: 8px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: var(--font-text);
-    font-size: 13px;
-    transition: all 0.3s ease;
+    background-color: #2D4059;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
 #hero .search-btn:hover {
-    background-color: var(--color-secondary);
+    background-color: #EA8217;
 }
+
+/* Controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Marca “AVENTURA GO” */
+#hero h2.marca {
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 40px;
+    right: 140px;
+    text-align: right;
+    color: white;
+}
+
+
+
 
 
 /* ESTILOS SECCION CARACTERISTICAS __________________________________________________________________________________ */
@@ -275,83 +310,55 @@ header {
 }
 
 /* Título y subtítulo */
-#Caracteristicas h2 {
+#caracteristicas h2 {
     font-family: var(--font-titles);
     color: var(--color-text);
     font-weight: 700;
     font-size: 32px;
-    margin-left: 450px;
-    margin-top: 50px;
 }
 
-#Caracteristicas .subtitle {
-    font-family: var(--font-text);
-    color: var(--color-text);
-    font-size: 25px;
-    margin-bottom: 40px;
-    margin-left: 480px;
+#caracteristicas .subtitle {
+    margin-bottom: 26px;
+    font-size: 23px;
 }
 
-#Caracteristicas .row {
+#caracteristicas .row {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: stretch;
-    padding-left: 177px;
 }
 
-
-#Caracteristicas .col-12.col-md-4 {
+#caracteristicas .col-12.col-md-4 {
     display: flex;
     flex: 1;
-    min-width: 0; /* Importante para flexbox */
-}
-
-.feature-card1,
-.feature-card2,
-.feature-card3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    min-width: 0;
+    /* Importante para flexbox */
 }
 
 /* Cards */
 .feature-card1,
 .feature-card2,
 .feature-card3 {
-    background-color: var(--color-white);
-    border: 38px solid var(--color-white);
-    border-radius: 20px;
+    color: var(--color-white);
+    border: 35px solid var(--color-white);
+    border-radius: 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    padding: 0px 30px;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
+    height: 85%;
     align-items: center;
-    text-align: center;
-    position: relative;
-    width: 235px;
-    margin-left: 23px;
 }
 
 /* Colores por card */
 .feature-card1 {
     background-color: var(--color-primary);
-    color: var(--color-white);
-    border-radius: 60px;
-
 }
 
 .feature-card2 {
     background-color: var(--color-secondary);
-    color: var(--color-white);
-    border-radius: 60px;
 }
 
 .feature-card3 {
     background-color: var(--color-primary);
-    color: var(--color-white);
-    border-radius: 60px;
 }
 
 /* Ícono superior */
@@ -395,12 +402,12 @@ header {
 .feature-card1 img.rounded-circle,
 .feature-card2 img.rounded-circle,
 .feature-card3 img.rounded-circle {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--color-white);
-    margin-top: -7px;
+    margin-top: -50px;
 }
 
 /* Hover animado */
@@ -413,19 +420,21 @@ header {
 
 /*Descripción inferior*/
 .features-description {
-    background-color: var(--color-white);
-    border-radius: 15px;
-    padding: 15px 100px 15px 100px;
+    border-radius: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     text-align: center;
-    margin-left: 78px;
-    margin-right: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
 }
+
+
 
 .features-description p {
     font-family: var(--font-text);
-    color: var(--color-text);
+    color: rgba(0, 0, 0, 0.549);
     font-size: 26px;
+    margin-top: -76px;
 }
 
 
@@ -604,6 +613,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 15px 0;
 }
 
 .footer-top h2 {
@@ -611,9 +621,23 @@ header {
     font-family: 'Raleway', sans-serif;
     font-size: 28px;
     font-weight: 400;
-    margin-left: 300px;
-    margin-right: -30px;
+    margin-left: 315px;
+}
 
+@keyframes palpitar {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.palpitando {
+    animation: palpitar 1.5s infinite ease-in-out;
 }
 
 .footer-top a {
@@ -624,10 +648,9 @@ header {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     border-radius: 20px;
-    padding: 20px 30px;
-    display: inline-block;
+    padding: 10px 20px;
     transition: transform 0.3s ease;
-    margin-right: 390px;
+    margin-right: 375px;
 }
 
 .footer-top a:hover {
@@ -654,12 +677,13 @@ header {
 /* Cada columna ocupa espacio automático */
 .footer-bottom .col-md-2 {
     flex: 1;
-    min-width: 0; /* Permite que se ajusten */
+    min-width: 0;
+    /* Permite que se ajusten */
 }
 
 /* Logo  */
 .logo-section img {
-   max-width: 230px;
+    max-width: 230px;
     margin-bottom: 0px;
     margin-top: 43px;
     margin-left: -6px;
@@ -688,7 +712,7 @@ header {
     text-transform: uppercase;
     color: var(--color-text);
     margin-left: 60px;
-    
+
 }
 
 /* Listas */
@@ -1027,16 +1051,16 @@ header {
         padding: 30px 30px;
     }
 
-    #testimonios.container{
+    #testimonios.container {
         padding: 0 15px;
     }
 
     /* Asegurar que las columnas se comporten correctamente */
     #testimonios .col-12.col-md-2,
     #testimonios .col-12.col-md-10 {
-    width: 100%;
-    padding: 0;
-}
+        width: 100%;
+        padding: 0;
+    }
 
     /* Centrar el título arriba del carrusel */
     #testimonios .row {
@@ -1047,10 +1071,6 @@ header {
 
     #testimonios h2 {
         font-size: 22px;
-        margin: 0 0 25px 0;
-        text-align: center;
-        margin-left: 0;
-        width: 100%;
     }
 
     /* Ajustar el contenedor del slider */
@@ -1183,4 +1203,3 @@ header {
     }
 
 }
-
