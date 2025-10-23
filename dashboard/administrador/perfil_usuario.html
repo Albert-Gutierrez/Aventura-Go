@@ -48,18 +48,8 @@
                     <img src="../../assets/dashboard/administrador/img/historial.png" alt="historial">
                     <p>Historial de reservas</p>
                 </a>
-                <a href="../../dashboard/administrador/perfil_usuario.html">
-                    <img src="../../assets/dashboard/administrador/img/usuario.png" alt="usuario">
-                    <p>Perfil de Usuario</p>
-                </a>
 
             </div>
-
-            <a href="" id="perfil">
-                <img src="../../assets/dashboard/administrador/img/perfil.png" alt="persona">
-                <p>AR-Ana</p>
-                <i class="bi bi-caret-down-fill"></i>
-            </a>
 
         </div>
 
@@ -70,9 +60,25 @@
                 <i class="bi bi-search"></i>
 
                 <button id="estilo"><i class="bi bi-moon-fill"></i></button>
-
                 <button id="estilo"><i class="bi bi-bell-fill"></i></button>
 
+                <!-- Dropdown con Bootstrap -->
+                <div class="dropdown" id="perfil-dropdown">
+                    <a href="#" id="perfil" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../assets/dashboard/administrador/img/perfil.png" alt="persona">
+                        <p>AR-Ana</p>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../../dashboard/administrador/perfil_usuario.html"><i class="bi bi-person"></i> Mi
+                            Perfil</a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../../index.html"><i class="bi bi-box-arrow-right"></i>
+                            Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
             </form>
 
             <div class="container">
@@ -117,13 +123,18 @@
                             </div>
                             <div class="col-md-6">
                                 <h4>Fecha de nacimiento</h4>
-                                <input type="text" placeholder="andresito22@gmail.com"><i class="bi bi-calendar3"></i>
+                                <input type="text" placeholder="01/10/1999"><i class="bi bi-calendar3"></i>
                             </div>
 
                             <div class="col-md-6">
                                 <h4>Ubicación</h4>
                                 <input type="text" placeholder="Bogotá, Colombia">
                             </div>
+                        </div>
+
+                        <div class="botones">
+                            <button>Descartar Cambios</button>
+                            <button>Guardar Cambios</button>
                         </div>
 
                     </form>
@@ -135,10 +146,7 @@
 
 
 
-            <div class="botones">
-                <button>Descartar Cambios</button>
-                <button>Guardar Cambios</button>
-            </div>
+
 
         </div>
 
