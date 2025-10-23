@@ -875,13 +875,13 @@ header {
         }
 
         #hero .carousel-caption h1 {
-            font-size: 28px;
+            font-size: 20px;
             line-height: 1.2;
             margin-bottom: 5px;
         }
 
         #hero .carousel-caption h2 {
-            font-size: 24px;
+            font-size: 20px;
             line-height: 1.2;
             margin-bottom: 15px;
         }
@@ -889,7 +889,7 @@ header {
         /* Párrafos del Hero */
         #hero .carousel-caption .parrafo1,
         #hero .carousel-caption .parrafo2 {
-            font-size: 13px;
+            font-size: 9px;
             line-height: 1.4;
             margin-bottom: 8px;
         }
@@ -1144,7 +1144,7 @@ header {
         }
 
         .footer-top h2 {
-            font-size: 18px;
+            font-size: 16px;
             margin: 0;
             text-align: center;
         }
@@ -1168,7 +1168,7 @@ header {
 
         .footer-bottom .col-md-2 {
             width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 0;
             text-align: center;
         }
 
@@ -1179,7 +1179,7 @@ header {
 
         .description {
             max-width: 100%;
-            margin: 15px 0;
+            margin: 0 10px;
             font-size: 14px;
             line-height: 1.5;
             padding: 0 10px;
