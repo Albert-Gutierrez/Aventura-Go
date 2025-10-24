@@ -146,173 +146,106 @@ header {
 }
 
 
-/* =========================================
-   SECCIÓN HERO - CONTACTANOS
-========================================= */
+
+/* Sección Hero Contactanos______________________________________________________________________________________________ */
 #hero-contactanos {
-    width: 100%;
-    background-color: #F8F9FA;
-    padding: 40px 0;
+    background-color: white;
+    padding: 60px 0;
     font-family: 'Lato', sans-serif;
+    color: #2B2B2B;
 }
 
-/* Contenedor principal */
-#hero-contactanos .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Imagen principal */
-#hero-contactanos .hero-image {
+/* Contenedor principal de la imagen */
+#hero-contactanos .header-arriba {
     position: relative;
-    width: 100%;
-    height: 380px;
+    text-align: center;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
-#hero-contactanos .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+#hero-contactanos .header-arriba img {
+    width: 95%;
+    height: 500px;
     border-radius: 20px;
+    filter: brightness(60%);
+    object-fit: cover;
+    margin-top: 25px;
 }
 
-/* Título sobre la imagen */
-#hero-contactanos .hero-image h1 {
+/* Título central sobre la imagen */
+#hero-contactanos .header-arriba h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFFFFF;
+    top: 35%;
+    left: 39%;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
+    color: #FFFFFF;
     font-size: 48px;
     letter-spacing: 2px;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    margin: 0;
 }
 
-/* ==========================
-   SECCIÓN HERO CONTACTANOS
-========================== */
-#hero-contactanos {
+@keyframes palpitar {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.palpitando {
+    animation: palpitar 1.5s infinite ease-in-out;
+}
+
+/* Bloques inferiores */
+#hero-contactanos .hero-info {
     background-color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
-    padding: 40px 0;
-}
-
-/* Contenedor principal */
-#hero-contactanos .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Imagen del hero */
-#hero-contactanos .col-12 {
-    position: relative;
-    text-align: center;
-}
-
-#hero-contactanos .col-12 img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 18px;
-    box-shadow: 6px 6px 0px #D7E1EA; /* sombra gris lateral como en la imagen */
-}
-
-/* Título centrado sobre la imagen */
-#hero-contactanos h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 46px;
-    color: #FFFFFF;
-    letter-spacing: 2px;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-    margin: 0;
-}
-
-/* ==========================
-   INFO (Email / Teléfono / Dirección)
-========================== */
-.hero-info {
+    border-radius: 2px;
+    padding: 15px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    text-align: center;
-    margin-top: 30px;
+    justify-content: space-evenly;
 }
 
-.hero-info img {
-    width: 35px;
-    height: 35px;
-    margin-bottom: 10px;
+/* Íconos */
+#hero-contactanos .hero-info .icono-email {
+    margin-left: 110px;
 }
 
-.hero-info h2 {
+#hero-contactanos .hero-info img {
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+}
+
+/* Títulos */
+#hero-contactanos .hero-info .h2-email {
+    margin-left: 97px;
+}
+
+#hero-contactanos .hero-info h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
     font-weight: 700;
     color: #2D4059;
-    margin-bottom: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 25px;
 }
 
-.hero-info h3 {
-    font-size: 14px;
+/* Texto */
+#hero-contactanos .hero-info h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 4px 0;
     color: #2B2B2B;
-    margin: 3px 0;
+    text-align: center;
 }
 
-/* ==========================
-   RESPONSIVE iPhone 14 Pro Max (430px)
-========================== */
-@media (max-width: 430px) {
-
-    #hero-contactanos {
-        padding: 20px 0;
-    }
-
-    #hero-contactanos .col-12 img {
-        height: 240px;
-        border-radius: 14px;
-    }
-
-    #hero-contactanos h1 {
-        font-size: 28px;
-        letter-spacing: 1px;
-    }
-
-    .hero-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        margin-top: 25px;
-    }
-
-    .hero-info img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .hero-info h2 {
-        font-size: 16px;
-    }
-
-    .hero-info h3 {
-        font-size: 13px;
-    }
+#hero-contactanos .hero-info .h3-email {
+    margin-left: 45px;
 }
-
-
-
-
-
 
 
 
