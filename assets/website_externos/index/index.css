@@ -441,6 +441,8 @@ header {
 /* seccion letrero movil_______________________________________________________________________________________________________ */
 #letrero{
     background: #F8F9FA;
+     text-shadow: 3px 1px 1px rgba(140, 140, 140, 0.7);
+    
 }
 
 .home-special {
@@ -941,6 +943,7 @@ header {
             line-height: 1.2;
             margin-bottom: 5px;
             text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         #hero .carousel-caption h2 {
@@ -948,6 +951,7 @@ header {
             line-height: 1.2;
             margin-bottom: 15px;
             text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         /* Párrafos del Hero */
@@ -957,6 +961,7 @@ header {
             line-height: 1.4;
             margin-bottom: 8px;
             text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         /* Marca */
@@ -993,6 +998,7 @@ header {
             display: none;
             /* Ocultar en móvil para más espacio */
         }
+
 
         /*SECCION CARACTERÍSTICAS __________________________________________ */
         #caracteristicas {
