@@ -16,7 +16,7 @@ $(document).ready(function () {
         arrows: true,          // Muestra flechas
         dots: true,            // Muestra los puntitos de navegación
         autoplay: true,        // Activa autoplay
-        autoplaySpeed: 2500,   // Velocidad del autoplay en ms
+        autoplaySpeed: 1500,   // Velocidad del autoplay en ms
         responsive: [
             {
                 breakpoint: 1024, // Tablets y laptops pequeñas
