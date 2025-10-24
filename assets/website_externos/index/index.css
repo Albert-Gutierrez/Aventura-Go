@@ -428,14 +428,80 @@ header {
     max-width: 1100px;
 }
 
-
-
 .features-description p {
     font-family: var(--font-text);
     color: rgba(0, 0, 0, 0.549);
     font-size: 26px;
     margin-top: -76px;
 }
+
+
+
+
+/* seccion letrero movil_______________________________________________________________________________________________________ */
+#letrero{
+    background: #F8F9FA;
+     text-shadow: 3px 1px 1px rgba(140, 140, 140, 0.7);
+    
+}
+
+.home-special {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.marquee1 {
+    position: relative;
+    overflow: hidden;
+    --anim-width: 1vw;
+    --move-initial: calc(0 + var(--anim-width));
+    --move-final: calc(-50% + var(--anim-width));
+}
+
+/* Contenedor que se mueve */
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    animation: marquee1 15s linear infinite;
+    animation-play-state: running;
+}
+
+/* Espaciado entre textos repetidos */
+.marquee1 span {
+    padding: 0 1.5vw; /*vw ancho del área visible del navegador*/
+    white-space: nowrap;
+}
+
+/* Estilo de las letras */
+.home-special-main-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 81px;
+    line-height: normal;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-primary);
+}
+
+/* Animación para mover el texto */
+@keyframes marquee1 {
+    0% {
+        transform: translateX(var(--move-initial));
+    }
+    100% {
+        transform: translateX(var(--move-final));
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -711,7 +777,7 @@ header {
     margin-bottom: 15px;
     text-transform: uppercase;
     color: var(--color-text);
-    margin-left: 60px;
+    margin-left: 35px;
 
 }
 
@@ -764,11 +830,9 @@ header {
 
 
 
+
+
 /* RESPONSIVE PARA IPHONE 14 PRO MAX - 430px x 932ps_____________________________________________________________________________ */
-@media screen and (max-width: 430px) {
-
-    /* CORRECCIONES RESPONSIVE IPHONE 14 PRO MAX - 430px x 932px */
-
     @media screen and (max-width: 430px) {
 
         /* HEADER ____________________________________ */
@@ -875,41 +939,47 @@ header {
         }
 
         #hero .carousel-caption h1 {
-            font-size: 28px;
+            font-size: 20px;
             line-height: 1.2;
             margin-bottom: 5px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         #hero .carousel-caption h2 {
-            font-size: 24px;
+            font-size: 20px;
             line-height: 1.2;
             margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         /* Párrafos del Hero */
         #hero .carousel-caption .parrafo1,
         #hero .carousel-caption .parrafo2 {
-            font-size: 13px;
+            font-size: 11px;
             line-height: 1.4;
             margin-bottom: 8px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
         /* Marca */
         #hero h2.marca {
-            font-size: 20px;
+            display: none;
+            /* font-size: 20px;
             bottom: 55px;
             right: 35px;
-            text-align: right;
+            text-align: right; */
         }
 
         /* Caja de búsqueda */
         #hero .search-box {
             position: absolute;
-            bottom: 40px;
-            left: 30%;
-            width: 40%;
-            padding: 10px 0px;
-            flex-direction: column;
+            bottom: 20px;
+            left: 50%;
+            width: 80%;
+            padding: 10px 20px;
             gap: 10px;
         }
 
@@ -928,6 +998,7 @@ header {
             display: none;
             /* Ocultar en móvil para más espacio */
         }
+
 
         /*SECCION CARACTERÍSTICAS __________________________________________ */
         #caracteristicas {
@@ -1144,7 +1215,7 @@ header {
         }
 
         .footer-top h2 {
-            font-size: 18px;
+            font-size: 16px;
             margin: 0;
             text-align: center;
         }
@@ -1168,7 +1239,7 @@ header {
 
         .footer-bottom .col-md-2 {
             width: 100%;
-            margin-bottom: 25px;
+            margin-bottom: 0;
             text-align: center;
         }
 
@@ -1179,7 +1250,7 @@ header {
 
         .description {
             max-width: 100%;
-            margin: 15px 0;
+            margin: 0 10px;
             font-size: 14px;
             line-height: 1.5;
             padding: 0 10px;
@@ -1218,5 +1289,3 @@ header {
             font-size: 18px;
         }
     }
-
-}
