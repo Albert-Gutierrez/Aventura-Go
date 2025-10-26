@@ -149,7 +149,7 @@ header {
 
 /* Sección Hero Contactanos______________________________________________________________________________________________ */
 #hero-contactanos {
-    background-color: #F8F9FA;
+    background-color: #ffffff;
     padding: 60px 0;
     font-family: 'Lato', sans-serif;
     color: #2B2B2B;
@@ -203,7 +203,7 @@ header {
 
 /* Bloques inferiores */
 #hero-contactanos .hero-info {
-    background-color: #F8F9FA;
+    background-color: #ffffff;
     border-radius: 2px;
     padding: 15px 0;
     display: flex;
