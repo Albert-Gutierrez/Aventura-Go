@@ -401,34 +401,36 @@ textarea {
 /* E S T I L O S      S E C C I O N    M A P A______________________________________________________________________ */
 /* SECCIÓN MAPA */
 .mapa-section {
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  padding: 40px 0;
-  background-color: #F8F9FA;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 40px 0;
+    background-color: #F8F9FA;
 }
 
 .mapa-section h2 {
-  font-family: 'Raleway', sans-serif;
-  color: #2D4059;
-  font-size: 28px;
-  margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #2D4059;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .mapa-contenedor {
-  width: 90%;
-  max-width: 900px;
-  height: 450px;
-  margin: 0 auto; /* centra horizontalmente */
-  border-radius: 20px;
-  overflow: hidden; /* oculta esquinas del iframe */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 900px;
+    height: 450px;
+    margin: 0 auto;
+    /* centra horizontalmente */
+    border-radius: 20px;
+    overflow: hidden;
+    /* oculta esquinas del iframe */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .mapa-contenedor iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
 
 
@@ -735,37 +737,111 @@ textarea {
 
 
     /*SECCION FORMULARIO_____________________________________________________________________________________________________*/
+   
+    .titulo-principal {
+        font-size: 22px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
     .formulario-completo {
         flex-direction: column;
+        margin: 20px;
+        min-height: auto;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     }
 
+    /* SECCIÓN IZQUIERDA */
     .seccion-izquierda {
-        display: none;
+        width: 100%;
+        background-color: #2D4059;
+        color: white;
+        padding: 30px 10px;
+        text-align: center;
+        position: relative;
     }
 
+    .seccion-izquierda img {
+        width: 200px;
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .seccion-izquierda .p1,
+    .seccion-izquierda .p2 {
+        position: relative;
+        margin: 10px 0 0 0;
+        font-size: 16px;
+    }
+
+    .seccion-izquierda .p2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* SECCIÓN DERECHA */
     .seccion-derecha {
         width: 100%;
+        padding: 25px 20px;
     }
 
+    .seccion-derecha h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .descripcion {
+        font-size: 14px;
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+
+    /* CAMPOS DEL FORMULARIO */
     .fila-campos {
         flex-direction: column;
-        gap: 0;
+        gap: 10px;
     }
 
-/* RESPONSIVE MAPA________________________________________________- */
-     .mapa-section {
-    padding: 20px 0;
-  }
+    label {
+        font-size: 13px;
+    }
 
-  .mapa-section h2 {
-    font-size: 22px;
-  }
+    input,
+    textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
 
-  .mapa-contenedor {
-    width: 95%;
-    height: 300px;
-    border-radius: 15px;
-  }
+    textarea {
+        min-height: 100px;
+    }
+
+    /* BOTÓN */
+    .btn-enviar {
+        width: 100%;
+        margin: 15px 0 0 0;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+
+
+    /* RESPONSIVE MAPA________________________________________________- */
+    .mapa-section {
+        padding: 20px 0;
+    }
+
+    .mapa-section h2 {
+        font-size: 22px;
+    }
+
+    .mapa-contenedor {
+        width: 95%;
+        height: 300px;
+        border-radius: 15px;
+    }
 
 
 

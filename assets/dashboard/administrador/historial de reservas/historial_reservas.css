@@ -11,7 +11,7 @@ body {
 }
 
 /* Layout principal */
-#listado {
+#historial {
     display: flex;
     min-height: 100vh;
 }
