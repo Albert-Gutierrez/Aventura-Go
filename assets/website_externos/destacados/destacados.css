@@ -337,6 +337,110 @@ header {
   background: var(--color-secondary);
 }
 
+
+.ofertas-temporada {
+  background-color: #fff;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.ofertas-temporada h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.ofertas-temporada .descripcion {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ======== GRID ======== */
+.grid-ofertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* ======== TARJETA ======== */
+.tarjeta-oferta {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-oferta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ======== IMAGEN ======== */
+.imagen-oferta {
+  position: relative;
+}
+
+.imagen-oferta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* ======== CONTENIDO ======== */
+.contenido-oferta {
+  padding: 18px;
+}
+
+.contenido-oferta h3 {
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.contenido-oferta p {
+  color: #555;
+  margin: 4px 0;
+  font-size: 0.9rem;
+}
+
+.info-extra {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.precio {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #007aff;
+}
+
+.tachado {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+}
+
 /* ===========================================================
    FOOTER SUPERIOR
    =========================================================== */
@@ -611,6 +715,15 @@ header {
   .menu-toggle {
     display: block;
   }
+
+  .ofertas-temporada {
+    padding: 40px 20px;
+  }
+
+  .grid-ofertas {
+    grid-template-columns: 1fr;
+  }
+
   .footer-top h2 {
     font-size: 16px;
     margin: 0;
