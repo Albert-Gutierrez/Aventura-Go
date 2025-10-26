@@ -1,0 +1,188 @@
+/* =============== ESTILOS GENERALES =============== */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F8F9FA;
+    color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* =============== BOTÓN ABRIR MODAL =============== */
+.btn-abrir-modal {
+    background-color: #EA8217;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-abrir-modal:hover {
+    background-color: #2D4059;
+}
+
+/* =============== MODAL =============== */
+.modal-viaje {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-viaje.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* =============== CERRAR BOTÓN =============== */
+.btn-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #2D4059;
+    font-weight: bold;
+}
+
+/* =============== TÍTULO =============== */
+.titulo-modal {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #2D4059;
+    margin-bottom: 30px;
+}
+
+/* =============== CONTENEDORES =============== */
+.contenido-flex {
+    display: flex;
+    gap: 40px;
+}
+
+.calendario {
+    flex: 0 0 70%;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =============== CALENDARIO =============== */
+.calendario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dias-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.dia {
+    padding: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dia:hover {
+    background-color: #EA8217;
+    color: white;
+}
+
+.dia.seleccionado {
+    background-color: #2D4059;
+    color: #FFFFFF;
+}
+
+/* =============== COLUMNA DERECHA =============== */
+.columna-derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+.label-hora {
+    font-weight: bold;
+    color: #2D4059;
+}
+
+.select-hora {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+}
+
+.resultado p {
+    margin: 5px 0;
+}
+
+.recordatorio {
+    background-color: #F8F9FA;
+    border-left: 4px solid #EA8217;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn-confirmar {
+    background-color: #2D4059;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-confirmar:hover {
+    background-color: #EA8217;
+}
+
+/* Cuando el modal está activo */
+.modal-viaje.activo {
+  display: flex; /* Muestra el modal al activarlo */
+}
+
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 768px) {
+    .contenido-flex {
+        flex-direction: column;
+    }
+
+    .calendario {
+        flex: 1;
+    }
+}
