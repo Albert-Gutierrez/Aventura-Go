@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de Reservas</title>
+    <link rel="stylesheet" href="../../assets/dashboard/turista/reserva.css" />
+  </head>
+  <body>
+    <div class="contenedor-reservas">
+      <div class="contenedor-blanco">
+        <h2>Dinos quién se apunta</h2>
+
+        <div class="grupo">
+          <div class="info">
+            <div class="icono"><img src="img/image 32 (1).png" alt="" /></div>
+            <div>
+              <h3>Adultos</h3>
+              <p>14 años en adelante</p>
+            </div>
+          </div>
+          <div class="contador">
+            <button class="btn-menos">−</button>
+            <span class="valor">10</span>
+            <button class="btn-mas">+</button>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <div class="info">
+            <div class="icono"><img src="img/image 31 (1).png" alt="" /></div>
+            <div>
+              <h3>Niños</h3>
+              <p>De 2 a 13 años</p>
+            </div>
+          </div>
+          <div class="contador">
+            <button class="btn-menos">−</button>
+            <span class="valor">1</span>
+            <button class="btn-mas">+</button>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <div class="info">
+            <div class="icono"><img src="img/image 33 (1).png" alt="" /></div>
+            <div>
+              <h3>Bebés</h3>
+              <p>Menos de 2 años</p>
+            </div>
+          </div>
+          <div class="contador">
+            <button class="btn-menos">−</button>
+            <span class="valor">0</span>
+            <button class="btn-mas">+</button>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <div class="info">
+            <div class="icono"><img src="img/image 34 (1).png" alt="" /></div>
+            <div>
+              <h3>Mascotas</h3>
+              <p>¿Tienes animal de servicio?</p>
+            </div>
+          </div>
+          <div class="contador">
+            <button class="btn-menos">−</button>
+            <span class="valor">1</span>
+            <button class="btn-mas">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Franja azul separadora -->
+      <div class="franja-azul"></div>
+
+      <!-- Sección Habitaciones (ahora en blanco) -->
+      <div class="contenedor-blanco habitaciones">
+        <div class="grupo">
+          <div class="info">
+            <div class="icono"><img src="img/image 48 (1).png" alt="" /></div>
+            <div>
+              <h3>Habitaciones</h3>
+            </div>
+          </div>
+          <div class="contador">
+            <button class="btn-menos">−</button>
+            <span class="valor">1</span>
+            <button class="btn-mas">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Franja azul inferior -->
+      <div class="franja-azul"></div>
+
+      <!-- Zona de resumen -->
+      <div class="resumen">
+        <p id="resumen-texto">
+          Total: 11 personas (10 adultos, 1 niño), 1 mascota | Total
+          Habitaciones: 1
+        </p>
+        <button id="btn-confirmar">Confirmar</button>
+      </div>
+    </div>
+
+    <script src="../../assets/dashboard/turista/reserva.js"></script>
+  </body>
+</html>
