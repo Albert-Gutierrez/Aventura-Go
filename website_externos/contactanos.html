@@ -127,16 +127,16 @@
                     experiencia algo extraordinario. Diligencia tus datos y te responderemos lo más pronto posible.
                 </p>
 
-                <form action="#" method="post">
+                <form action="https://formsubmit.co/aventurago.contacto@gmail.com" method="post">
                     <!-- PRIMERA FILA - 2 COLUMNAS -->
                     <div class="fila-campos">
                         <div class="campo">
                             <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" placeholder="Ej: María Pérez">
+                            <input type="text" id="nombre" placeholder="Ej: María Pérez" required>
                         </div>
                         <div class="campo">
                             <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" placeholder="Ej: +57 320 123 4567">
+                            <input type="tel" id="telefono" placeholder="Ej: +57 320 123 4567" required>
                         </div>
                     </div>
 
@@ -144,11 +144,11 @@
                     <div class="fila-campos">
                         <div class="campo">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Ej: sucorreo@correo.com">
+                            <input type="email" id="email" placeholder="Ej: sucorreo@correo.com" required>
                         </div>
                         <div class="campo">
                             <label for="objeto">Objeto de la pregunta</label>
-                            <input type="text" id="objeto" placeholder="Ej: Consulta general">
+                            <input type="text" id="objeto" placeholder="Ej: Consulta general" required>
                         </div>
                     </div>
 
@@ -156,13 +156,20 @@
                     <div class="fila-campos">
                         <div class="campo-full">
                             <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" rows="4"
-                                placeholder="Ej: El siguiente mensaje es para..."></textarea>
+                            <textarea id="mensaje" rows="4" placeholder="Ej: El siguiente mensaje es para..."
+                                required></textarea>
                         </div>
                     </div>
 
+
+                    <!-- Configuración de FormSubmit para que aparezca mensaje de gracias al enviar el formulario de contacto -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://albert-gutierrez.github.io/Aventura-Go/website_externos/contactanos_gracias.html">
+
                     <!-- BOTÓN -->
                     <button type="submit" class="btn-enviar vibrar">Enviar mensaje</button>
+
+
                 </form>
             </div>
         </div>
