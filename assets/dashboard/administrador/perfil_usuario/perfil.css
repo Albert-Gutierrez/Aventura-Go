@@ -114,7 +114,8 @@ form .bi-search {
     pointer-events: none;
 }
 
-#estilo {
+#modoOscuroBtn,
+#notificacionesBtn {
     margin-bottom: 16px;
     margin-left: 10px;
     padding: 7px 20px;
@@ -423,4 +424,39 @@ form#datos .bi-calendar3 {
     .botones button {
         width: 100%;
     }
+}
+
+/* modo oscuro */
+.modo-oscuro .panel{
+    background: #2a2828;
+}
+
+.modo-oscuro .info {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.modo-oscuro form input{
+    background: #2a2828;
+}
+
+.modo-oscuro #modoOscuroBtn,
+.modo-oscuro #notificacionesBtn{
+    background: #EA8217;
+}
+
+.modo-oscuro .usuario{
+    background: #2a2828;
+}
+
+.modo-oscuro form#datos h4{
+    color: #ffffff;
+}
+
+.modo-oscuro form#datos input{
+    background: #2a2828;
+}
+
+.modo-oscuro form#datos #espacio{
+    background: #2a2828;
 }
