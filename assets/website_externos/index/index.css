@@ -916,6 +916,7 @@ header {
 
         #hero .carousel {
             border-radius: 12px;
+            margin: 0 10px;
         }
 
         #hero .carousel-item img {
