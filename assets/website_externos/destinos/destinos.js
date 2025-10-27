@@ -40,3 +40,20 @@ $(document).ready(function () {
         ]
     });
 });
+
+// ================== HERO SLIDER AUTOMÁTICO ==================
+$(document).ready(function () {
+    $('.slider-hero').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        dots: true,
+        fade: true,
+        speed: 1000,
+        cssEase: 'ease-in-out'
+    });
+});
+
