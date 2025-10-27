@@ -67,15 +67,17 @@
 
             <div class="fila-Superior">
 
+                <!-- Barra de busqueda de resrvas -->
                 <div class="buscador">
                     <i class="bi bi-search"></i>
                     <input type="search" id="buscarReserva" placeholder="Buscar reserva...">
                 </div>
 
+                <!-- Botones moso oscuro y notificaciones -->
                 <button id="modoOscuroBtn"> <i class="bi bi-moon-fill"></i></button>
                 <button id="notificacionesBtn"> <i class="bi bi-bell-fill"></i></button>
 
-                <!-- boton naranja esquina superior-izq -->
+                <!-- Boton naranja esquina superior-izq -->
                 <div class="dropdown" id="perfil-dropdown">
 
                     <a href="#" id="perfil" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,8 +86,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="../../dashboard/administrador/perfil_usuario.html"><i
-                                    class="bi bi-person"></i> Mi
-                                Perfil</a>
+                                    class="bi bi-person"></i> Mi Perfil</a>
                         </li>
                         <hr class="dropdown-divider">
                         </li>
@@ -102,6 +103,7 @@
             <h1>HISTORIAL DE RESERVAS</h1>
             <p class="ultimo-mes">Últimas reservas</p>
 
+            <!-- aca se insertan dinamicamente desde jason las reservas realizadas -->
             <div id="reservasContainer"></div>
 
 
