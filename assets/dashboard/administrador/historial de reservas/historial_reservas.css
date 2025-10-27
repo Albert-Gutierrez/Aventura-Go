@@ -4,12 +4,14 @@
 /*fuente para textos*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-h1 h2 h3 h4 h5 h6{
-    --font-titles: 'Raleway', sans-serif;/*tipografia titulos*/
+h1 h2 h3 h4 h5 h6 {
+    --font-titles: 'Raleway', sans-serif;
+    /*tipografia titulos*/
 }
 
-p a button input{
-    --font-text: 'Lato', sans-serif;/*tipografia textos*/
+p a button input {
+    --font-text: 'Lato', sans-serif;
+    /*tipografia textos*/
 }
 
 * {
@@ -28,7 +30,7 @@ body {
     min-height: 100vh;
 }
 
-/* ========== PANEL LATERAL ========== */
+/* PANEL LATERAL___________________________________________________________________________________________________*/
 .panel {
     width: 280px;
     background-color: #2D4059;
@@ -74,7 +76,7 @@ body {
     color: #ffffff;
 }
 
-/* ========== CONTENIDO PRINCIPAL ========== */
+/* CONTENIDO LADO DERECHO ______________________________________________________________________________________________ */
 .info {
     flex-grow: 1;
     padding: 15px 40px;
@@ -86,7 +88,7 @@ body {
     vertical-align: top;
 }
 
-form {
+.fila-Superior {
     position: relative;
     padding: 10px 0 20px;
     display: flex;
@@ -94,7 +96,7 @@ form {
     gap: 15px;
 }
 
-form input {
+.fila-Superior input {
     background-color: #DEE6F2;
     height: 40px;
     border-radius: 11px;
@@ -104,9 +106,10 @@ form input {
     font-size: 14px;
     padding: 8px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
-form .bi-search {
+.fila-Superior .bi-search {
     position: absolute;
     bottom: 49px;
     left: 605px;
@@ -114,7 +117,8 @@ form .bi-search {
     pointer-events: none;
 }
 
-#estilo {
+#modoOscuroBtn,
+#notificacionesBtn {
     margin-bottom: 16px;
     margin-left: 10px;
     padding: 7px 20px;
@@ -125,14 +129,32 @@ form .bi-search {
     cursor: pointer;
 }
 
-form .bi-moon-fill,
-form .bi-bell-fill {
+.fila-Superior .bi-moon-fill,
+.fila-Superior .bi-bell-fill {
     color: #000000;
     font-size: 20px;
     cursor: pointer;
 }
 
-form button a {
+.modo-oscuro .info {
+    background: #2D4059;
+    color: #FFFFFF;
+}
+
+.modo-oscuro .info h1{
+color: #FFFFFF;
+}
+.modo-oscuro .reserva{
+    background: #1d1c1c;
+    color: #FFFFFF;
+}
+
+.modo-oscuro .reserva p{
+    color: #FFFFFF;
+}
+
+
+.bufila-Superiorsqueda button a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -142,10 +164,17 @@ form button a {
     font-size: 28px;
     color: #000000;
     margin-bottom: 25px;
+    margin-left: 65px;
+    margin-top: -10px;
+}
+
+.info .ultimo-mes{
+    margin-left: 65px;
+    margin-bottom: 5px;
 }
 
 /* Perfil en el panel */
-form #perfil {
+.fila-Superior #perfil {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -154,18 +183,18 @@ form #perfil {
     border-radius: 12px;
     text-decoration: none;
     color: #ffffff;
-    margin-left: 20px;
+    margin-left: 90px;
     margin-bottom: 10px;
 }
 
-form #perfil img {
+.fila-Superior #perfil img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-form #perfil p {
+.fila-Superior #perfil p {
     font-weight: 600;
     font-size: 14px;
     margin: 0;
@@ -200,183 +229,63 @@ form #perfil p {
     margin: 5px 0;
 }
 
-/* ========== FORMULARIO DE FILTROS ========== */
-.formulario {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
-    padding: 25px;
-    background-color: #DEE6F2;
-;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
 
-.formulario .campo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* ESTO centra los elementos */
-    gap: 10px;
-    width: 100%;
-}
 
-.formulario h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-
-.formulario button {
-    width: 57%;
-    padding: 12px 20px;
+.search-bar button {
     background-color: #EA8217;
-    color: #ffffff;
     border: none;
-    border-radius: 8px;
-    font-weight: 300;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario button:hover {
-    background-color: #ff7a29;
-}
-
-.formulario button i {
-    font-size: 12px;
-}
-
-/* ========== TABLA DE RESERVAS ========== */
-.lista {
-    background-color: #DEE6F2;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    overflow-x: auto;
-}
-
-/* Tabla ocupa todo el ancho */
-.lista table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-/* Forzar display para thead y tbody */
-.lista thead,
-.lista tbody {
-    display: block;
-    width: 100%;
-}
-
-.lista thead tr {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1.2fr;
-    gap: 15px;
-    padding: 15px 20px;
-    background-color: #DEE6F2;
-    border-radius: 8px;
-    margin-bottom: 0;
-    width: 100%;
-}
-
-/* Línea separadora después del thead */
-.lista thead::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #d1d5db;
-    margin: 15px 0;
-}
-
-.lista thead td {
-    font-weight: 700;
-    font-size: 13px;
     color: #000000;
-    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
 }
 
-.lista tbody tr {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1.2fr;
-    gap: 15px;
-    padding: 15px 20px;
+.reserva {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background-color: #F8F9FA;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 60px;
 }
 
-.lista tbody tr:last-child {
-    border-bottom: none;
+.reserva p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #2B2B2B;
 }
 
-.lista tbody td {
-    font-size: 14px;
-    color: #34495e;
-}
-
-/* Botón de estado */
-.lista tbody td .confirmada {
-    padding: 8px 16px;
-    background-color: #2ecc71;
-    color: #ffffff;
+.reserva .ver {
+    background-color: #EA8217;
+    color: #fff;
     border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 12px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-/* Diferentes estados */
-.lista tbody td .en-proceso {
-    padding: 8px 16px;
-    background-color: #f39c12;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 12px;
-    cursor: pointer;
+#reservasContainer {
+    max-height: 470px; /*altura máxima visible */
+    overflow-y: auto;  /*activa el scroll vertical */
+    overflow-x: hidden; /* evita el desplazamiento horizontal */
+    padding-right: 10px; /* un pequeño espacio para la barra */
 }
 
-.lista tbody td .cancelada {
-    padding: 8px 16px;
-    background-color: #e74c3c;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 12px;
-    cursor: pointer;
-}
-/* ========== RESPONSIVE ========== */
-@media (max-width: 1200px) {
-    .formulario {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/*barra de desplazamiento */
+#reservasContainer::-webkit-scrollbar {
+    width: 7px;
 }
 
-@media (max-width: 768px) {
-    #historial {
-        flex-direction: column;
-    }
+#reservasContainer::-webkit-scrollbar-track {
+    background: #F8F9FA;
+    border-radius: 10px;
+}
 
-    .panel {
-        width: 100%;
-    }
-
-    .formulario {
-        grid-template-columns: 1fr;
-    }
-
-    .lista thead tr,
-    .lista tbody tr {
-        grid-template-columns: 1fr;
-    }
+#reservasContainer::-webkit-scrollbar-thumb {
+    background-color: #2D4059;
+    border-radius: 10px;
 }
