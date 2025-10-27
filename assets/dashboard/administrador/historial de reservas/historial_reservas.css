@@ -62,7 +62,7 @@ body {
 }
 
 .items a:hover {
-    background-color: #010101;
+    background-color: #EA8217;
 }
 
 .items a img {
@@ -182,6 +182,10 @@ body {
 .modo-oscuro #reservasContainer::-webkit-scrollbar-thumb {
     background-color: #EA8217;
     border-radius: 10px;
+}
+
+.modo-oscuro .items a:hover {
+    background-color: #000000;
 }
 
 
