@@ -265,6 +265,227 @@ header {
 }
 
 
+/* === SECCIÓN DESTINOS POPULARES === */
+.destinos-populares {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo-seccion {
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #000;
+}
+
+.subtitulo-seccion {
+    color: #555;
+    margin-top: 5px;
+}
+
+/* BUSCADOR */
+.buscador {
+    position: relative;
+}
+
+.buscador input {
+    border: none;
+    padding: 10px 45px 10px 15px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 0.95rem;
+    outline: none;
+    width: 270px;
+    transition: box-shadow 0.3s ease;
+}
+
+.buscador input:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.buscador i {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* === TARJETAS DE DESTINOS === */
+.destino-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.destino-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
+}
+
+.destino-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* CONTENIDO DE LA TARJETA */
+.destino-card .card-body {
+    padding: 15px 20px;
+}
+
+.destino-card .card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.destino-card .card-text {
+    font-size: 0.9rem;
+    color: #f5b50a;
+}
+
+/* MARCA DE AGUA */
+.marca-agua {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    background: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+/* ETIQUETA DE OFERTA */
+.oferta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00ffff;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+
+/* === BOTÓN “MÁS DESTINOS” === */
+.btn-ver-mas {
+    background: none;
+    border: none;
+    color: #00ffff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* ---------- CORRECTIVO: GRID y TARJETAS ---------- */
+/* Forzar 3 columnas en pantallas md+ y responsivo en móvil */
+.destinos-populares .row {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+    align-items: start;
+}
+
+/* Asegura que cada "col" no añada comportamiento extraño */
+.destinos-populares .row>.col,
+.destinos-populares .row>.col-md-4 {
+    display: block;
+    width: 100%;
+}
+
+/* === AJUSTE DE ESTILO SUTIL PARA TARJETAS === */
+.destino-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 255, 255, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+}
+
+.destino-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 255, 255, 0.25);
+}
+
+/* Imagen más baja para hacer la tarjeta compacta */
+.destino-card img {
+    width: 100%;
+    height: 160px;
+    /* antes 200px */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Cuerpo más pequeño y con menos padding */
+.destino-card .card-body {
+    padding: 10px 14px;
+}
+
+/* Tipografía más ligera */
+.destino-card .card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+}
+
+.destino-card .card-text {
+    font-size: 0.8rem;
+    color: #f5b50a;
+}
+
+/* Ajuste del grid general */
+.destinos-populares .row {
+    gap: 1.2rem !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    align-items: start;
+}
+
+/* Suavizar botón “Más destinos” */
+.btn-ver-mas {
+    font-size: 1rem;
+    color: #00e0e0;
+}
+
+.btn-ver-mas:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Responsive: mantener armonía visual */
+@media (max-width: 992px) {
+    .destinos-populares .row {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .destinos-populares .row {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+
+
 /* E S T I L O S    F O O T E R-_________________________________________________________________________________________ */
 /* footer superior */
 .footer-top {
