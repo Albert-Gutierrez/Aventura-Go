@@ -62,7 +62,7 @@ body {
 }
 
 .items a:hover {
-    background-color: #34495e;
+    background-color: #010101;
 }
 
 .items a img {
@@ -136,21 +136,52 @@ body {
     cursor: pointer;
 }
 
+.modo-oscuro .panel{
+    background: #2a2828;
+}
+
 .modo-oscuro .info {
-    background: #2D4059;
+    background: #000000;
     color: #FFFFFF;
 }
 
-.modo-oscuro .info h1{
-color: #FFFFFF;
+.modo-oscuro .fila-Superior input {
+    background: #2a2828;
+    color: white;
 }
-.modo-oscuro .reserva{
+
+.modo-oscuro #modoOscuroBtn {
+    background-color: #EA8217;
+}
+
+.modo-oscuro .bi-moon-fill::before {
+    background-color: #EA8217;
+}
+
+.modo-oscuro #notificacionesBtn {
+    background-color: #EA8217;
+}
+
+.modo-oscur #bi-bell-fill::before {
+    background-color: #EA8217;
+}
+
+.modo-oscuro .info h1 {
+    color: #FFFFFF;
+}
+
+.modo-oscuro .reserva {
     background: #1d1c1c;
     color: #FFFFFF;
 }
 
-.modo-oscuro .reserva p{
+.modo-oscuro .reserva p {
     color: #FFFFFF;
+}
+
+.modo-oscuro #reservasContainer::-webkit-scrollbar-thumb {
+    background-color: #EA8217;
+    border-radius: 10px;
 }
 
 
@@ -168,7 +199,7 @@ color: #FFFFFF;
     margin-top: -10px;
 }
 
-.info .ultimo-mes{
+.info .ultimo-mes {
     margin-left: 65px;
     margin-bottom: 5px;
 }
@@ -269,10 +300,14 @@ color: #FFFFFF;
 }
 
 #reservasContainer {
-    max-height: 470px; /*altura máxima visible */
-    overflow-y: auto;  /*activa el scroll vertical */
-    overflow-x: hidden; /* evita el desplazamiento horizontal */
-    padding-right: 10px; /* un pequeño espacio para la barra */
+    max-height: 470px;
+    /*altura máxima visible */
+    overflow-y: auto;
+    /*activa el scroll vertical */
+    overflow-x: hidden;
+    /* evita el desplazamiento horizontal */
+    padding-right: 10px;
+    /* un pequeño espacio para la barra */
 }
 
 /*barra de desplazamiento */

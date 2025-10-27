@@ -12,7 +12,7 @@ modoOscuroBtn.addEventListener('click', () => {
 
 // boton listo para recibir notificaciones (ejemplo)
 notificacionesBtn.addEventListener('click', () => {
-    alert("🔔 Tienes nuevas notificaciones");
+    alert("Tienes nuevas reservas, verifica");
 });
 
 
