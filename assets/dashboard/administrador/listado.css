@@ -114,7 +114,8 @@ form .bi-search {
     pointer-events: none;
 }
 
-#estilo {
+#modoOscuroBtn,
+#notificacionesBtn {
     margin-bottom: 16px;
     margin-left: 10px;
     padding: 7px 20px;
@@ -379,4 +380,47 @@ form #perfil p {
     .lista tbody tr {
         grid-template-columns: 1fr;
     }
+}
+
+/* modo oscuro */
+.modo-oscuro .panel{
+    background: #2a2828;
+}
+
+.modo-oscuro .info {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.modo-oscuro form input{
+    background: #2a2828;
+}
+
+.modo-oscuro #modoOscuroBtn,
+.modo-oscuro #notificacionesBtn{
+    background: #EA8217;
+}
+
+.modo-oscuro .info h1{
+    color: #ffffff;
+}
+
+.modo-oscuro .formulario{
+    background: #2a2828;
+}
+
+.modo-oscuro .lista{
+    background: #2a2828;
+}
+
+.modo-oscuro .lista thead tr{
+    background: #2a2828;
+}
+
+.modo-oscuro .lista thead td{
+    color: #ffffff;
+}
+
+.modo-oscuro .lista tbody td{
+    color: #ffffff;
 }
