@@ -2,7 +2,7 @@
   {
     "id": 1,
     "titulo": "Hotel Montaña Dorada",
-    "imagen": "https://picsum.photos/400/250?random=1",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/1.png",
     "reseñas": 4.8,
     "opiniones": 124,
     "noches": 2,
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "titulo": "Eco Lodge La Cascada",
-    "imagen": "https://picsum.photos/400/250?random=2",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/2.png",
     "reseñas": 4.5,
     "opiniones": 97,
     "noches": 3,
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "titulo": "Casa Campestre El Paraíso",
-    "imagen": "https://picsum.photos/400/250?random=3",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/3.png",
     "reseñas": 4.9,
     "opiniones": 211,
     "noches": 1,
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "titulo": "Hostal La Cabaña Azul",
-    "imagen": "https://picsum.photos/400/250?random=4",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/4.png",
     "reseñas": 4.3,
     "opiniones": 156,
     "noches": 2,
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "titulo": "Finca Los Robles",
-    "imagen": "https://picsum.photos/400/250?random=5",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/5.png",
     "reseñas": 4.7,
     "opiniones": 198,
     "noches": 3,
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "titulo": "Hotel Jardín Encantado",
-    "imagen": "https://picsum.photos/400/250?random=6",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/6.png",
     "reseñas": 4.6,
     "opiniones": 87,
     "noches": 2,
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "titulo": "Glamping Estrella Verde",
-    "imagen": "https://picsum.photos/400/250?random=7",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/7.png",
     "reseñas": 4.8,
     "opiniones": 142,
     "noches": 1,
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "titulo": "Refugio Río Claro",
-    "imagen": "https://picsum.photos/400/250?random=8",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/8.png",
     "reseñas": 4.4,
     "opiniones": 134,
     "noches": 2,
@@ -90,7 +90,7 @@
   {
     "id": 9,
     "titulo": "Hotel Boutique Mirador del Sol",
-    "imagen": "https://picsum.photos/400/250?random=9",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/9.png",
     "reseñas": 5.0,
     "opiniones": 178,
     "noches": 2,
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "titulo": "Cabañas El Bosque Secreto",
-    "imagen": "https://picsum.photos/400/250?random=10",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/10.png",
     "reseñas": 4.7,
     "opiniones": 165,
     "noches": 3,
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "titulo": "Posada Las Palmeras",
-    "imagen": "https://picsum.photos/400/250?random=11",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/11.png",
     "reseñas": 4.2,
     "opiniones": 94,
     "noches": 1,
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "titulo": "Hotel Campestre Villa Real",
-    "imagen": "https://picsum.photos/400/250?random=12",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/12.png",
     "reseñas": 4.9,
     "opiniones": 220,
     "noches": 3,
@@ -134,7 +134,7 @@
   {
     "id": 13,
     "titulo": "EcoRefugio El Encanto",
-    "imagen": "https://picsum.photos/400/250?random=13",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/13.png",
     "reseñas": 4.8,
     "opiniones": 175,
     "noches": 2,
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "titulo": "Cabaña Horizonte Azul",
-    "imagen": "https://picsum.photos/400/250?random=14",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/14.png",
     "reseñas": 4.5,
     "opiniones": 130,
     "noches": 1,
@@ -156,7 +156,7 @@
   {
     "id": 15,
     "titulo": "Hotel Aventura Natural",
-    "imagen": "https://picsum.photos/400/250?random=15",
+    "imagen": "/assets/dashboard/turista/hospedaje_vega/img/15.png",
     "reseñas": 4.6,
     "opiniones": 203,
     "noches": 2,

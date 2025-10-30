@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --color-primary: #2D4059;
+  --color-secondary: #EA8217;
+  --color-white: #FFFFFF;
+  --color-bg-light: #F8F9FA;
+  --color-border: #E0E0E0;
+  --color-text: #2b2b2b;
+  --font-titles: 'Raleway', sans-serif;
+  --font-text: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+
+}
+
+/* HEADER */
+header {
+  background-color: var(--color-white);
+  margin: 0 30px 0 30px;
+  border-radius: 25px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.navbar-logo {
+  width: 120px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: var(--font-titles);
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-link:hover { color: var(--color-secondary); }
+
+.actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: var(--font-titles);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.principal {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+button.secundario {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+}
+
+/* CONTENIDO PRINCIPAL */
+.hospedaje-container {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.titulo-seccion {
+  font-family: var(--font-titles);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* TARJETAS */
+.card-hospedaje {
+  background-color: var(--color-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-hospedaje:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card-hospedaje img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body-custom {
+  padding: 16px;
+}
+
+.card-titulo {
+  font-family: var(--font-titles);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.card-resena {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.card-precio {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* MODAL */
+.modal-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

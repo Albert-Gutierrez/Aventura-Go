@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contador de Reservas</title>
-    <link rel="stylesheet" href="../../assets/dashboard/turista/reserva.css" />
+    <link rel="stylesheet" href="../../assets/dashboard/turista/reserva/reserva.css" />
   </head>
   <body>
     <div class="contenedor-reservas">
@@ -13,61 +13,61 @@
 
         <div class="grupo">
           <div class="info">
-            <div class="icono"><img src="img/image 32 (1).png" alt="" /></div>
+            <div class="icono"><img src="../../assets/dashboard/turista/reserva/img/LOGO-FINAL.png" alt="" /></div>
             <div>
               <h3>Adultos</h3>
               <p>14 años en adelante</p>
             </div>
           </div>
           <div class="contador">
-            <button class="btn-menos">−</button>
-            <span class="valor">10</span>
-            <button class="btn-mas">+</button>
+            <button class="btn-menos" data-tipo="adultos">−</button>
+            <span class="valor" id="adultos">10</span>
+            <button class="btn-mas" data-tipo="adultos">+</button>
           </div>
         </div>
 
         <div class="grupo">
           <div class="info">
-            <div class="icono"><img src="img/image 31 (1).png" alt="" /></div>
+            <div class="icono"><img src="../../assets/dashboard/turista/reserva/img/image 31 (1).png" alt="" /></div>
             <div>
               <h3>Niños</h3>
               <p>De 2 a 13 años</p>
             </div>
           </div>
           <div class="contador">
-            <button class="btn-menos">−</button>
-            <span class="valor">1</span>
-            <button class="btn-mas">+</button>
+            <button class="btn-menos" data-tipo="ninos">−</button>
+            <span class="valor" id="ninos">1</span>
+            <button class="btn-mas" data-tipo="ninos">+</button>
           </div>
         </div>
 
         <div class="grupo">
           <div class="info">
-            <div class="icono"><img src="img/image 33 (1).png" alt="" /></div>
+            <div class="icono"><img src="../../assets/dashboard/turista/reserva/img/image 33 (1).png" alt="" /></div>
             <div>
               <h3>Bebés</h3>
               <p>Menos de 2 años</p>
             </div>
           </div>
           <div class="contador">
-            <button class="btn-menos">−</button>
-            <span class="valor">0</span>
-            <button class="btn-mas">+</button>
+            <button class="btn-menos" data-tipo="bebes">−</button>
+            <span class="valor" id="bebes">0</span>
+            <button class="btn-mas" data-tipo="bebes">+</button>
           </div>
         </div>
 
         <div class="grupo">
           <div class="info">
-            <div class="icono"><img src="img/image 34 (1).png" alt="" /></div>
+            <div class="icono"><img src="../../assets/dashboard/turista/reserva/img/image 34 (1).png" alt="" /></div>
             <div>
               <h3>Mascotas</h3>
               <p>¿Tienes animal de servicio?</p>
             </div>
           </div>
           <div class="contador">
-            <button class="btn-menos">−</button>
-            <span class="valor">1</span>
-            <button class="btn-mas">+</button>
+            <button class="btn-menos" data-tipo="mascotas">−</button>
+            <span class="valor" id="mascotas">1</span>
+            <button class="btn-mas" data-tipo="mascotas">+</button>
           </div>
         </div>
       </div>
@@ -75,19 +75,19 @@
       <!-- Franja azul separadora -->
       <div class="franja-azul"></div>
 
-      <!-- Sección Habitaciones (ahora en blanco) -->
+      <!-- Sección Habitaciones -->
       <div class="contenedor-blanco habitaciones">
         <div class="grupo">
           <div class="info">
-            <div class="icono"><img src="img/image 48 (1).png" alt="" /></div>
+            <div class="icono"><img src="../../assets/dashboard/turista/reserva/img/image 48 (1).png" alt="" /></div>
             <div>
               <h3>Habitaciones</h3>
             </div>
           </div>
           <div class="contador">
-            <button class="btn-menos">−</button>
-            <span class="valor">1</span>
-            <button class="btn-mas">+</button>
+            <button class="btn-menos" data-tipo="habitaciones">−</button>
+            <span class="valor" id="habitaciones">1</span>
+            <button class="btn-mas" data-tipo="habitaciones">+</button>
           </div>
         </div>
       </div>
@@ -98,13 +98,12 @@
       <!-- Zona de resumen -->
       <div class="resumen">
         <p id="resumen-texto">
-          Total: 11 personas (10 adultos, 1 niño), 1 mascota | Total
-          Habitaciones: 1
+          Total: 11 personas (10 adultos, 1 niño), 1 mascota | Total Habitaciones: 1
         </p>
         <button id="btn-confirmar">Confirmar</button>
       </div>
     </div>
 
-    <script src="../../assets/dashboard/turista/reserva.js"></script>
+    <script src="../../assets/dashboard/turista/reserva/reserva.js"></script>
   </body>
 </html>
