@@ -1,0 +1,277 @@
+/* CONTENEDOR PRINCIPAL */
+.tour-detail-page {
+  max-width: 980px;
+  margin: 120px auto 60px;
+  padding: 0 20px;
+}
+
+/* TARJETA PRINCIPAL */
+.tour-card {
+  border-radius: 16px;
+  background: #fff;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* CINTA SUPERIOR */
+.tour-top-ribbon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* PÍLDORAS DE INFORMACIÓN */
+.tour-top-ribbon .small-pill {
+  background: #f3f5f7;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-right: 10px;
+}
+
+/* BOTONES */
+.tour-top-ribbon .ribbon-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tour-top-ribbon .btn-outline {
+  border: 1px solid #d2d6dc;
+  background: #fff;
+  color: #111;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tour-top-ribbon .btn-outline:hover {
+  background: #f5f6f7;
+}
+
+.tour-top-ribbon .btn-primary {
+  background: #ff8c00; /* puedes reemplazarlo por tu --color-secondary */
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tour-top-ribbon .btn-primary:hover {
+  background: #e57c00;
+  transform: translateY(-1px);
+}
+
+
+/* SECCIÓN 1: BARRA DE RESERVA */
+
+
+/* Contenedor principal de la sección */
+/* Establece el fondo azul oscuro y espaciado general */
+section.reserva-bar-section {
+    
+    padding: 20px 0; /* Espaciado vertical: 20px arriba y abajo */
+    margin-top: 80px; /* Compensa la altura del header fijo */
+   
+}
+
+/* Contenedor personalizado para esta sección */
+/* Reemplaza .container de Bootstrap para evitar conflictos */
+.reserva-bar-section .reserva-container {
+    max-width: 1200px; /* Ancho máximo en pantallas grandes */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 15px; /* Espaciado lateral en móviles */
+}
+
+/* Barra principal que agrupa los 3 selectores */
+/* Usa flexbox para alinearlos horizontalmente */
+.reserva-bar-section .reserva-bar {
+    display: flex; /* Elementos en línea horizontal */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 0; /* Sin espacios entre items - están pegados */
+    background-color: #2d3e50; /* Gris-azulado medio - contrasta con fondo oscuro */
+    border-radius: 8px; /* Esquinas redondeadas suaves */
+    padding: 10px; /* Espaciado interno de la barra */
+    max-width: 900px; /* Ancho máximo de la barra */
+    margin: 0 auto; /* Centra la barra */
+}
+
+/* Cada selector individual (fechas, personas, habitaciones) */
+/* Estructura interna: ícono + contenido + flecha */
+.reserva-bar-section .reserva-item {
+    display: flex; /* Alinea ícono, contenido y flecha */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espacio entre ícono, contenido y flecha */
+    padding: 12px 20px; /* Espaciado interno: 12px vertical, 20px horizontal */
+    background-color: #667380; /* Gris azulado más claro que la barra */
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil entre items */
+    flex: 1; /* Los 3 items ocupan el mismo ancho */
+    min-width: 250px; /* Ancho mínimo para que no se aprieten */
+    transition: background-color 0.3s ease; /* Animación suave al hacer hover */
+}
+
+/* El último item no necesita línea divisoria a la derecha */
+.reserva-bar-section .reserva-item:last-child {
+    border-right: none;
+}
+
+/* Iconos de Font Awesome (calendario, personas, cama) */
+/* Aparecen al inicio de cada item */
+.reserva-bar-section .reserva-item > i.fa-calendar,
+.reserva-bar-section .reserva-item > i.fa-user-friends,
+.reserva-bar-section .reserva-item > i.fa-bed {
+    color: #ffffff; /* Blanco puro para buen contraste */
+    font-size: 18px; /* Tamaño visible pero no dominante */
+    flex-shrink: 0; /* Evita que se compriman */
+}
+
+/* Contenedor del contenido central (inputs/selects) */
+/* Ocupa el espacio entre el ícono inicial y la flecha final */
+.reserva-bar-section .reserva-content {
+    display: flex; /* Organiza inputs/selects internamente */
+    align-items: center; /* Centra verticalmente */
+    gap: 8px; /* Espacio entre elementos internos */
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* Inputs de fecha (tipo date) */
+/* Estilo transparente para integrarse con el fondo del item */
+.reserva-bar-section .reserva-input {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Lato', sans-serif; /* Fuente del proyecto */
+    font-size: 13px; /* Tamaño de texto legible */
+    outline: none; /* Quita el borde azul del navegador al hacer foco */
+    cursor: pointer; /* Indica que es clickeable */
+    flex: 1; /* Se expande para llenar el espacio */
+}
+
+/* Ajusta el color del texto del placeholder en inputs de fecha */
+.reserva-bar-section .reserva-input::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invierte el color del ícono del calendario para que sea blanco */
+    cursor: pointer;
+}
+
+/* Separador visual entre las dos fechas (el guion "-") */
+.reserva-bar-section .reserva-separator {
+    color: rgba(255, 255, 255, 0.6); /* Blanco semi-transparente */
+    font-size: 14px;
+}
+
+/* Selects personalizados (personas y habitaciones) */
+/* Estilo consistente con los inputs de fecha */
+.reserva-bar-section .reserva-select {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Lato', sans-serif; /* Fuente del proyecto */
+    font-size: 13px; /* Tamaño consistente */
+    outline: none; /* Sin borde de foco */
+    cursor: pointer; /* Indica que es clickeable */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 0; /* Sin padding adicional */
+    -webkit-appearance: none; /* Quita estilos por defecto en Chrome/Safari */
+    -moz-appearance: none; /* Quita estilos por defecto en Firefox */
+    appearance: none; /* Quita estilos por defecto estándar */
+}
+
+/* Opciones dentro de los selects */
+/* Fondo oscuro para que sean legibles al desplegarse */
+.reserva-bar-section .reserva-select option {
+    background-color: #2D4059; /* Azul oscuro del proyecto */
+    color: #ffffff; /* Texto blanco */
+    padding: 8px; /* Espaciado interno para las opciones */
+}
+
+/* Flecha hacia abajo al final de cada item */
+/* Indica que el elemento es desplegable */
+.reserva-bar-section .reserva-item > i.fa-chevron-down {
+    color: rgba(255, 255, 255, 0.6); /* Blanco semi-transparente - menos prominente */
+    font-size: 12px; /* Más pequeña que los íconos principales */
+    flex-shrink: 0; /* No se comprime */
+}
+
+/* Efecto hover al pasar el mouse sobre cada item */
+/* Mejora la experiencia de usuario indicando interactividad */
+.reserva-bar-section .reserva-item:hover {
+    background-color: #445a70; /* Se aclara ligeramente */
+}
+
+/* ====================================================================================================== */
+/* RESPONSIVE - ADAPTACIÓN A DISPOSITIVOS MÓVILES */
+/* ====================================================================================================== */
+
+/* Tablets y móviles (768px o menos) */
+@media (max-width: 768px) {
+    
+    /* Reduce el margen superior en móviles */
+    section.reserva-bar-section {
+        margin-top: 70px;
+        padding: 15px 0;
+    }
+    
+    /* Cambia la disposición de horizontal a vertical */
+    .reserva-bar-section .reserva-bar {
+        flex-direction: column; /* Apila los items verticalmente */
+        gap: 0; /* Sin espacios entre items */
+        padding: 0; /* Sin padding externo */
+    }
+
+    /* Cada item ocupa todo el ancho disponible */
+    .reserva-bar-section .reserva-item {
+        width: 100%; /* Ancho completo */
+        min-width: auto; /* Quita el mínimo */
+        border-right: none; /* Sin borde derecho */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borde inferior como separador */
+        border-radius: 0; /* Sin redondeo individual */
+    }
+
+    /* El primer item tiene redondeo superior */
+    .reserva-bar-section .reserva-item:first-child {
+        border-radius: 8px 8px 0 0;
+    }
+
+    /* El último item tiene redondeo inferior y sin borde */
+    .reserva-bar-section .reserva-item:last-child {
+        border-bottom: none;
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+/* Móviles muy pequeños (430px o menos) */
+@media (max-width: 430px) {
+    
+    /* Reduce aún más el padding en pantallas pequeñas */
+    .reserva-bar-section .reserva-item {
+        padding: 10px 15px;
+    }
+    
+    /* Reduce el tamaño de los iconos */
+    .reserva-bar-section .reserva-item > i.fa-calendar,
+    .reserva-bar-section .reserva-item > i.fa-user-friends,
+    .reserva-bar-section .reserva-item > i.fa-bed {
+        font-size: 16px;
+    }
+    
+    /* Reduce el tamaño del texto */
+    .reserva-bar-section .reserva-input,
+    .reserva-bar-section .reserva-select {
+        font-size: 12px;
+    }
+}
