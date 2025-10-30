@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventura Go - contactanos</title>
 
+    <!-- bootstrap para el carrusel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (para las estrellas) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <!-- bootstrap primero -->
     <link href="path/to/bootstrap.min.css" rel="stylesheet">
 
@@ -33,7 +39,7 @@
     <!-- header________________________________________________________________________________________________________________________________ -->
     <header>
         <nav class="navbar">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Logo -->
                 <div class="logo">
                     <img src="../assets/website_externos/destinos/img/LOGO-NEGATIVO.png" alt="Logo Aventura Go"
@@ -44,16 +50,16 @@
                 <ul class="navbar-nav" id="navbarNav">
                     <li><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li><a class="nav-link active" href="destinos.html">Destinos</a></li>
-                    <li><a class="nav-link" href="destacados.html">Destacados</a></li>
-                    <li><a class="nav-link" href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
+                    <li><a class="nav-link" href="toursDestacados.html">Destacados</a></li>
+                    <li><a class="nav-link" href="website_externos/acerca_de_nosotros.html">Acerca de nosotros</a></li>
                     <li><a class="nav-link" href="contactanos.html">Contáctanos</a></li>
                 </ul>
 
                 <!-- Botones y menú móvil -->
                 <div class="actions">
                     <div class="actions">
-                        <a href="../extras/login.html" class="btn-login">Ingresa</a>
-                        <a href="../extras/registrarse.html" class="btn-register">Regístrate</a>
+                        <a href="extras/login.html" class="btn-login">Ingresa</a>
+                        <a href="extras/registrarse.html" class="btn-register">Regístrate</a>
 
                         <!-- menu hambirguesa en responsive -->
                         <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
@@ -65,53 +71,72 @@
             </div>
         </nav>
     </header>
-    <!-- ======================================== HERO SLIDER ======================================= -->
-    <section id="hero" class="hero-slider">
-        <div class="slider-hero">
-            <!-- Slide 1 -->
-            <div class="slide" style="background-image: url('../assets/website_externos/destinos/img/rafting1.jpg');">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h1>Conecta con la aventura,</h1>
-                    <h2>vive la experiencia</h2>
-                    <p>Descubre experiencias únicas, paisajes inolvidables y emociones extremas.</p>
+
+
+
+    <!-- Sección Hero________________________________________________________________________________________________________________________ -->
+    <section id="hero" class="container-fluid">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="../assets/website_externos/destinos/img/rafting1.jpg" class="d-block w-100"
+                        alt="Turismo en bote">
+                    <div class="carousel-caption">
+                        <h1>Explora sin límites,</h1>
+                        <h2>descubre tu próximo destino</h2>
+                        <p class="parrafo1">Embárcate en rutas llenas de adrenalina, cultura y naturaleza que te harán
+                            vibrar.</p>
+
+
+                    </div>
                 </div>
-                <span class="marca">AVENTURA <br> GO</span>
+
+                <div class="carousel-item">
+                    <img src="../assets/website_externos/destinos/img/senderismo1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1>El mundo te espera,</h1>
+                        <h2>atrévete a vivirlo</h2>
+                        <p class="parrafo1">Sumérgete en nuevas aventuras, desde montañas imponentes hasta mares
+                            cristalinos.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../assets/website_externos/destinos/img/torrentismo1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1>Destinos que inspiran,</h1>
+                        <h2>aventuras que transforman</h2>
+                        <p class="parrafo1">Viaja a lugares mágicos donde cada paso cuenta una historia y cada paisaje
+                            deja huella.</p>
+
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Slide 2 -->
-            <div class="slide"
-                style="background-image: url('../assets/website_externos/destinos/img/torrentismo1.jpg');">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h1>Descubre tu lado aventurero,</h1>
-                    <h2>déjate llevar por la emoción</h2>
-                    <p>Explora montañas, ríos y caminos que despiertan tu espíritu libre.</p>
+            <div class="search-box">
+                <div class="search-item">
+                    <strong>Dinos a dónde vas</strong>
                 </div>
-                <span class="marca">AVENTURA <br> GO</span>
+                <a href="website_externos/destinos.html" class="search-btn">Busca tu destino</a>
             </div>
 
-            <!-- Slide 3 -->
-            <div class="slide"
-                style="background-image: url('../assets/website_externos/destinos/img/senderismo1.jpg');">
-                <div class="overlay"></div>
-                <div class="content">
-                    <h1>Vive la naturaleza al máximo,</h1>
-                    <h2>explora en altura</h2>
-                    <p>Aventura Go te conecta con lo mejor del turismo extremo y la magia de Colombia.</p>
-                </div>
-                <span class="marca">AVENTURA <br> GO</span>
-            </div>
-        </div>
+            <h2 class="marca">AVENTURA<br>GO</h2>
 
-        <!-- Botón unificado centrado abajo -->
-        <div class="boton-destinos">
-            <div class="buscador-hero">
-                <input type="text" placeholder="Dinos a donde vas">
-                <button class="btn-buscar">
-                    <i class="fas fa-search"></i> Buscar
-                </button>
-            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
     </section>
 
@@ -308,7 +333,7 @@
 
 
     <!-- _______________________________F O O T E R__________________________________________ -->
-    <footer id="footer" class="container">
+    <footer id="footer" class="container-fluid">
 
         <!-- footer superior -->
         <div class="footer-top">
@@ -402,7 +427,8 @@
 
     </footer>
 
-
+    <!-- Abootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JavaScript de Slick -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

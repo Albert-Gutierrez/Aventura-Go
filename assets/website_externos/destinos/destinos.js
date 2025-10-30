@@ -1,7 +1,4 @@
-
-
-
-// menu hamburguesa del header____________________________________________________________________________________
+// menu hamburguesa
 const toggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('navbarNav');
 
@@ -9,21 +6,17 @@ toggle.addEventListener('click', () => {
     nav.classList.toggle('show');
 });
 
-
-
-// carrusel slick automatico__________________________________________________________________________________________
-// OJO  debe cambiar el nombre del .slider-XXXXXXX las (x) es un ejemplo
-
+// carrusel slick automatico
 $(document).ready(function () {
 
-    $('.slider-XXXXXXXXX').slick({
+    $('.slider-testimonios').slick({
         slidesToShow: 3,       // Número de cards visibles a la vez
         slidesToScroll: 1,     // Cuántas se mueven por clic
         infinite: true,        // Que sea infinito
         arrows: true,          // Muestra flechas
         dots: true,            // Muestra los puntitos de navegación
         autoplay: true,        // Activa autoplay
-        autoplaySpeed: 2500,   // Velocidad del autoplay en ms
+        autoplaySpeed: 1500,   // Velocidad del autoplay en ms
         responsive: [
             {
                 breakpoint: 1024, // Tablets y laptops pequeñas
@@ -39,21 +32,5 @@ $(document).ready(function () {
             }
         ]
     });
-});
 
-// ================== HERO SLIDER AUTOMÁTICO ==================
-$(document).ready(function () {
-    $('.slider-hero').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        dots: true,
-        fade: true,
-        speed: 1000,
-        cssEase: 'ease-in-out'
-    });
 });
-
