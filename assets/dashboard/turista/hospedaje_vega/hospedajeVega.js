@@ -14,22 +14,30 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("Error cargando hospedajes:", err));
 
-  // Mostrar tarjetas
   function mostrarHospedajes(lista) {
     contenedor.innerHTML = "";
+
+    // Si es resultado de búsqueda con solo 1 tarjeta, usar estilo compacto
+    const esBusquedaUnica = lista.length === 1;
+
     lista.forEach(h => {
       const card = document.createElement("div");
       card.classList.add("card-hospedaje");
 
+      if (esBusquedaUnica) {
+        card.classList.add("busqueda-tarjeta");  // clase especial para búsqueda única
+      }
+
       card.innerHTML = `
-        <img src="${h.imagen}" alt="Imagen hospedaje">
-        <div class="card-body-custom">
-          <h5 class="card-titulo">${h.titulo}</h5>
-          <p class="card-resena">⭐ ${h.reseñas} (${h.opiniones} opiniones)</p>
-          <p>${h.noches} Noches, ${h.dias} Días</p>
-          <p class="card-precio">Desde $${h.precio}</p>
-        </div>
-      `;
+      <img src="${h.imagen}" alt="Imagen hospedaje">
+      <div class="card-body-custom">
+        <h5 class="card-titulo">${h.titulo}</h5>
+        <p class="card-resena">⭐ ${h.reseñas} (${h.opiniones} opiniones)</p>
+        <p>${h.noches} Noches, ${h.dias} Días</p>
+        <p class="card-precio">Desde $${h.precio}</p>
+      </div>
+    `;
+
       card.addEventListener("click", () => abrirModal(h));
       contenedor.appendChild(card);
     });
