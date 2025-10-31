@@ -65,6 +65,7 @@ input.addEventListener('keyup', filtrarReservas);
         document.getElementById('identificacionUsuario').textContent = reserva.identificacion ?? '';
         document.getElementById('fechaReserva').textContent = reserva.fecha ?? '';
         document.getElementById('destinoReserva').textContent = reserva.lugar ?? '';
+        document.getElementById('actividadReserva').textContent = reserva.actividad ?? '';
         document.getElementById('precioReserva').textContent = `$${reserva.precio.toLocaleString()}`;
         modal.style.display = 'flex';
         modal.setAttribute('aria-hidden', 'false');

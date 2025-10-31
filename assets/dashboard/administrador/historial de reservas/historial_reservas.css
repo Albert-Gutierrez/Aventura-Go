@@ -381,198 +381,202 @@ body {
 
 
 
-/* ===================== RESPONSIVE DESIGN ===================== */
 
-/* Tablets (pantallas hasta 992px) */
-@media (max-width: 992px) {
+   /* RESPONSIVE iPhone 14 Pro Max (430 px) */
+@media screen and (max-width: 430px) {
+
+    /* Ajustes generales */
+    body {
+        background-color: #f5f5f5;
+        font-size: 15px;
+        overflow-x: hidden;
+    }
+
     #historial {
         flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
     }
 
+    #historial a p {
+        display: block !important;
+        font-size: 15px;
+        margin-top: 3px;
+        text-align: center;
+         border-radius: 15px;
+    }
+
+    /* PANEL LATERAL → se adapta como encabezado */
     .panel {
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
         padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .panel>img {
-        width: 100px;
-        margin: 0;
+    .panel > img {
+        width: 120px;
+        margin: 10px auto 20px auto;
     }
 
     .items {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
     }
 
     .items a {
-        padding: 8px 12px;
-        font-size: 13px;
+        flex: 0 0 calc(33.33% - 10px);
+        padding: 10px;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 1px #EA8217;
     }
 
+    .items a img {
+        display: none;
+        /* width: 20px; se quitaron para dejar solo textos
+        height: 20px; */
+    }
+
+
+    /* CONTENIDO PRINCIPAL */
     .info {
-        padding: 20px;
+        padding: 15px;
+        width: 100%;
     }
 
+    /* Fila superior (buscador, botones, perfil) */
     .fila-Superior {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
         gap: 10px;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .fila-Superior input {
         width: 100%;
         margin-left: 0;
-        margin-right: 220px;
+        height: 42px;
+        font-size: 14px;
+        border-radius: 10px;
     }
 
     .fila-Superior .bi-search {
-        position: absolute;
-        bottom: 45px;
         left: auto;
-        right: 30px;
-        display: none;
+        right: 20px;
+        bottom: 35px;
+        font-size: 18px;
     }
 
+    #modoOscuroBtn{
+        width: 100%;
+        margin-left: 0;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    #notificacionesBtn {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .fila-Superior #perfil {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .fila-Superior #perfil img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* TÍTULO Y TEXTOS */
+    .info h1 {
+        font-size: 22px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .info .ultimo-mes {
+        text-align: center;
+        margin: 0 auto 10px auto;
+    }
+
+    /* RESERVAS */
     .reserva {
-        margin: 10px 0;
-        flex-direction: row;
         align-items: flex-start;
-        gap: 5px;
+        gap: 8px;
+        margin: 10px 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .reserva p {
+        font-size: 15px;
     }
 
     .reserva .ver {
         align-self: flex-end;
-    }
-
-    #reservasContainer {
-        max-height: 600px;
-    }
-}
-
-/* Celulares grandes (pantallas hasta 768px) */
-@media (max-width: 768px) {
-    .panel {
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 20px;
-    }
-
-    .items {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .info h1 {
-        font-size: 22px;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .fila-Superior {
-        flex-direction: row;
-        align-items: stretch;
-        gap: 8px;
-    }
-
-    .fila-Superior input {
-        width: 100%;
-        font-size: 13px;
-        margin-right: 220px;
-    }
-
-    .fila-Superior #perfil {
-        margin: 0 auto;
-    }
-
-    .reserva {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    #reservasContainer {
-        max-height: 600px;
-    }
-}
-
-/* Celulares pequeños (pantallas hasta 576px) */
-@media (max-width: 576px) {
-    .panel {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .panel>img {
-        width: 80px;
-    }
-
-    .items a p {
-        display: none;
-        /* Solo íconos en móviles */
-    }
-
-    .items a img {
-        width: 22px;
-        height: 22px;
-    }
-
-    .fila-Superior {
-        padding: 0;
-    }
-
-    .info h1 {
-        font-size: 20px;
-        margin-left: 0;
-    }
-
-    .reserva {
-        margin: 8px 0;
-        padding: 8px;
-        border-radius: 8px;
-    }
-
-    .reserva p {
+        padding: 7px 14px;
         font-size: 13px;
     }
 
-    .reserva .ver {
-        font-size: 13px;
-        padding: 4px 8px;
-    }
 
     #reservasContainer {
-        max-height: 600px;
+        max-height: 400px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 5px;
     }
 
-    .modal {
-        padding: 10px;
-        overflow-y: auto;/* permite desplazamiento si el contenido es largo */
+    #reservasContainer::-webkit-scrollbar {
+        width: 6px;
     }
 
+    /* MODAL DETALLE DE RESERVA */
     .modal-contenido {
-        width: 100%;
-        max-width: 100%;
-        padding: 18px;
+        width: 90%;
+        padding: 20px;
         border-radius: 12px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
     }
 
     .modal-contenido h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: center;
     }
 
     .detalle-reserva p {
-        font-size: 13px;
-        line-height: 1.4;
+        font-size: 14px;
+        text-align: left;
     }
 
     .cerrar {
         font-size: 22px;
+        top: 5px;
+        right: 10px;
+    }
+
+    /* OSCURO MODE en móvil */
+    .modo-oscuro .info {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    .modo-oscuro .panel {
+        background-color: #1f1f1f;
+    }
+
+    .modo-oscuro .reserva {
+        background-color: #1e1e1e;
     }
 }
