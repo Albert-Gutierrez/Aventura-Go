@@ -1,9 +1,9 @@
 const valores = {
-  adultos: 10,
-  ninos: 1,
+  adultos: 0,
+  ninos: 0,
   bebes: 0,
-  mascotas: 1,
-  habitaciones: 1
+  mascotas: 0,
+  habitaciones: 0
 };
 
 const actualizarResumen = () => {
