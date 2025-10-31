@@ -58,7 +58,9 @@ header {
   transition: 0.3s;
 }
 
-.nav-link:hover { color: var(--color-secondary); }
+.nav-link:hover {
+  color: var(--color-secondary);
+}
 
 .actions button {
   border: none;
@@ -103,14 +105,14 @@ button.secundario {
   background-color: var(--color-white);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .card-hospedaje:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card-hospedaje img {
@@ -146,4 +148,265 @@ button.secundario {
 .modal-header {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+* E S T I L O S F O O T E R-_________________________________________________________________________________________ */
+
+/* footer superior */
+.footer-top {
+  width: 100%;
+  align-content: center;
+  background-color: #2D4059;
+  color: white;
+  padding: 5px 0;
+}
+
+
+.footer-top .row .col-md-12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #2D4059;
+}
+
+.footer-top h2 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 315px;
+}
+
+@keyframes palpitar {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.palpitando {
+  animation: palpitar 1.5s infinite ease-in-out;
+}
+
+.footer-top a {
+  background-color: #EA8217;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+  margin-right: 375px;
+}
+
+.footer-top a:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* FOOTER INFERIOR------------------------------------------------------------------------ */
+.footer-bottom {
+  background-color: var(--color-bg-light);
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer-bottom .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+/* Cada columna ocupa espacio automático */
+.footer-bottom .col-md-2 {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Logo  */
+.logo-section img {
+  max-width: 230px;
+  margin-bottom: 0px;
+  margin-top: 43px;
+  margin-left: -6px;
+  width: 115%;
+}
+
+/* y descripción */
+.description {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-top: 33px;
+  margin-left: -22px;
+  margin-right: -63px;
+}
+
+/* Títulos */
+.dest-section,
+.enlaces-section,
+.contacto-section,
+.redes-section {
+  font-family: 'lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-left: 60px;
+
+}
+
+/* Listas */
+.footer-bottom .list-unstyled li {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: var(--color-text);
+  margin-left: 35px;
+  margin-right: -40px;
+}
+
+.footer-bottom .list-unstyled a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.footer-bottom .list-unstyled a:hover {
+  color: #EA8217;
+}
+
+/* Contactos */
+.contact-list li {
+  font-size: 12px;
+  color: #cccccc;
+  margin-bottom: 8px;
+}
+
+/* Redes sociales en fila */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.social-links a {
+  color: var(--color-primary);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #EA8217;
+}
+
+
+
+
+
+
+@media screen and (max-width: 430px) {
+
+  /* FOOTER___________________________________________________ */
+  #footer {
+    text-align: center;
+    padding: 0;
+  }
+
+  /* Sección superior */
+  .footer-top {
+    padding: 20px 15px;
+  }
+
+  .footer-top .row .col-md-12 {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .footer-top h2 {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-top a {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  /* Footer inferior */
+  .footer-bottom {
+    padding: 30px 15px;
+  }
+
+  .footer-bottom .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-bottom .col-md-2 {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .logo-section img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .dest-section,
+  .enlaces-section,
+  .contacto-section,
+  .redes-section {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .footer-bottom .list-unstyled li {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0 0 0;
+  }
+
+  .social-links a i {
+    font-size: 18px;
+  }
 }
