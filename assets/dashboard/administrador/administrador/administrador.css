@@ -588,6 +588,18 @@ form #perfil p {
     background-color: #DEE6F2;
 }
 
+.green_r {
+    background-color: #2ec804;
+}
+
+.blue_r {
+    background-color: #0066ff;
+}
+
+.red_r {
+    background-color: #ff0000;
+}
+
 .amount {
     font-weight: 600;
 }
@@ -595,4 +607,139 @@ form #perfil p {
 /* GASTOS */
 .gastos {
     text-align: center;
+}
+
+/* resumen reservas */
+.btn {
+    background: #EA8217;
+}
+
+.resumen-reservas {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #d8e4ff;
+    width: 100%;
+    margin: 20px auto;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+
+.resumen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.resumen-header h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn-filtrar {
+    background: #EA8217;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-filtrar:hover {
+    background: #ff6f00;
+}
+
+/* Simulación del gráfico */
+.grafico-container {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ultima reserva */
+.ultima-reserva {
+    background-color: #e3f2fd;
+    /* Azul clarito de fondo */
+    border-radius: 10px;
+}
+
+/* Título */
+.ultima-reserva h6 {
+    color: #0d47a1;
+    /* Azul oscuro */
+    font-weight: bold;
+}
+
+/* Botón Filtrar */
+.ultima-reserva .btn {
+    background-color: #1565c0;
+    /* Azul medio */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.ultima-reserva .btn:hover {
+    background-color: #0d47a1;
+    /* Azul más oscuro al pasar el mouse */
+}
+
+/* Tabla */
+.ultima-reserva table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezados */
+.ultima-reserva th {
+    background-color: #bbdefb;
+    /* Azul suave */
+    color: #0d47a1;
+    text-align: left;
+    padding: 12px;
+}
+
+/* Celdas */
+.ultima-reserva td {
+    padding: 12px;
+    border-bottom: 1px solid #90caf9;
+}
+
+/* Hover en filas */
+.ultima-reserva tbody tr:hover {
+    background-color: #1565c0;
+    color: #ffffff;
+    cursor: pointer;
+}
+/* gastos */
+.gastos {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gastos h6 {
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.gastos canvas {
+    width: 100% !important;
+    height: 180px !important;
 }
