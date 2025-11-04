@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Descubre Tu Hospedaje</title>
-  <link rel="stylesheet" href="../../assets/dashboard/turista/hospedajeVega.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../../assets/dashboard/turista/hospedaje_vega/hospedajeVega.css">
 </head>
+
 <body>
 
   <!-- HEADER -->
   <header>
     <nav class="navbar">
       <div class="container">
-        <img src="" alt="Logo Aventura Go" class="navbar-logo">
+        <img src="../../assets/dashboard/turista/hospedaje_vega/img/LOGO-FINAL copy.png" alt="Logo Aventura Go"
+          class="navbar-logo">
         <ul class="navbar-nav">
           <li><a href="#" class="nav-link active">Tours y Aventura</a></li>
           <li><a href="#" class="nav-link">Hospedaje</a></li>
         </ul>
         <div class="actions">
           <button class="principal">Atrás</button>
-          <button class="secundario">Salir</button>
+
         </div>
       </div>
     </nav>
@@ -37,10 +46,11 @@
     </div>
 
     <!-- Tarjetas dinámicas -->
-    <div id="contenedorHospedajes" class="row mt-4"></div>
+    <div id="contenedorHospedajes" class="contenedor-grid mt-5"></div>
   </main>
 
-  <!-- MODAL DE INFORMACIÓN -->
+  <!-- MODAL -->
+
   <div class="modal fade" id="modalHospedaje" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -52,20 +62,117 @@
           <img id="modalImagen" class="img-fluid rounded mb-3" alt="Imagen hospedaje">
           <p id="modalDescripcion"></p>
           <ul>
-            <li><strong>Noches:</strong> <span id="modalNoches"></span></li>
-            <li><strong>Días:</strong> <span id="modalDias"></span></li>
-            <li><strong>Precio:</strong> $<span id="modalPrecio"></span></li>
+            <li>Noches: <span id="modalNoches"></span></li>
+            <li>Días: <span id="modalDias"></span></li>
+            <li>Precio: $<span id="modalPrecio"></span></li>
           </ul>
         </div>
         <div class="modal-footer">
-          <button class="secundario" id="btnReservar">Reservar</button>
+          <a href="hospedaje_escogido.html"><button class="secundario" id="btnReservar">Más Información</button></a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap y JS -->
+  <!-- F O O T E R_____________________________________________________________________________________________________________________________ -->
+  <footer id="footer" class="container-fluid">
+
+    <!-- footer superior -->
+    <div class="footer-top">
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <h2 class="palpitando">¿Quieres que tu negocio aparezca aquí?</h2>
+          <a href="website_externos/contactanos.html">Publicate en Aventura Go</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Inferior -->
+    <div class="footer-bottom">
+      <div class="row">
+
+        <!-- Columna 1: Logo -->
+        <div class="col-md-2">
+          <div class="logo-section">
+            <img src="/assets/estilos_globales/img/LOGO-FINAL copy.png" alt="logo Aventura Go">
+          </div>
+        </div>
+
+        <!-- col 2 Descripción  -->
+        <div class="col-md-2">
+          <p class="description">
+            Aventura Go, somos una plataforma de turismo que conecta viajeros con experiencias
+            únicas de aventura. Promovemos el turismo sostenible, apoyamos a prestadores locales y
+            ofrecemos actividades seguras y memorables en destinos naturales.
+          </p>
+        </div>
+
+
+        <!-- Columna 3: Destinos -->
+        <div class="col-md-2">
+          <h5 class="dest-section">Destinos</h5>
+          <ul class="list-unstyled">
+            <li>Villeta</li>
+            <li>Utica</li>
+            <li>La Vega</li>
+            <li>San Francisco</li>
+            <li>Tobia</li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Enlaces Útiles -->
+        <div class="col-md-2">
+          <h5 class="enlaces-section">Enlaces útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Travel Blog</a></li>
+            <li><a href="#">Be Our Partner</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 5: Contacto -->
+        <div class="col-md-2">
+          <h5 class="contacto-section">Contactos</h5>
+          <ul class="list-unstyled contact-list">
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>321 2263435</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>aventurago2025@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Villeta Cundinamarca</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 6: Redes Sociales -->
+        <div class="col-md-2">
+          <h5 class="redes-section">Síguenos</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/dashboard/turista/hospedajeVega.js"></script>
+
+  <script src="../../assets/dashboard/turista/hospedaje_vega/hospedajeVega.js"></script>
 </body>
+
 </html>

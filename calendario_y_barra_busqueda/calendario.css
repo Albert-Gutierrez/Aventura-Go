@@ -1,0 +1,194 @@
+/* ===================== FUENTES ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Lato:wght@400;700&display=swap');
+
+/* ==================== CONTENEDOR ==================== */
+.date-picker-container {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ================== BOTÓN PRINCIPAL ================= */
+.date-button {
+    background-color: #FFFFFF;
+    border: 2px solid #EA8217;
+    color: #2B2B2B;
+    font-family: 'Lato', sans-serif;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    transition: all .2s ease;
+    width: fit-content;
+}
+
+.date-button:hover {
+    background-color: #FFF3E4;
+    border-color: #EA8217;
+}
+
+/* icono */
+.calendar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================== CALENDARIO PANEL ================= */
+.calendar {
+    position: absolute;
+    top: 60px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    width: 360px;
+    z-index: 999;
+    animation: fadeIn .15s ease-out;
+}
+
+/* animación entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* ============= ENCABEZADO MES/AÑO ============= */
+.calendar-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2D4059;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background .2s;
+    border: none;
+    background: none;
+}
+
+.nav-btn:hover {
+    background-color: #F0F0F0;
+}
+
+/* clickable label */
+#currentLabel {
+    cursor: pointer;
+    padding: 10px 8px;
+    border-radius: 6px;
+}
+
+#currentLabel:hover {
+    background-color: #F0F0F0;
+}
+
+/* ================== GRID DÍAS ================== */
+.week-names {
+    font-weight: bold;
+    color: #777;
+    font-size: 14px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* celdas */
+.calendar-grid div {
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .15s ease;
+}
+
+/* días hover */
+.calendar-grid div:not(.disabled):hover {
+    background-color: #EA8217;
+    color: #FFFFFF;
+}
+
+/* deshabilitados (días pasados) */
+.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/* fecha seleccionada */
+.selected {
+    background-color: #2D4059 !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+
+/* rango entre fechas (si luego activas eso) */
+.range {
+    background-color: #EA8217 !important;
+    color: #FFFFFF !important;
+}
+
+/* ============= MESES & AÑOS VISTAS ============= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    text-align: center;
+    margin-top: 12px;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 10px;
+}
+
+.grid div {
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .15s ease;
+}
+
+.grid div:hover:not(.disabled) {
+    background-color: #EA8217;
+    color: #FFFFFF;
+}
+
+/* Mes/Año seleccionado */
+.month-cell.selected,
+.year-cell.selected {
+    background-color: #2D4059;
+    color: #FFF;
+}
+
+/* ================= SCROLL Si es muy pequeño el viewport =============== */
+@media(max-height: 500px) {
+    .calendar {
+        overflow-y: auto;
+        max-height: 350px;
+    }
+}

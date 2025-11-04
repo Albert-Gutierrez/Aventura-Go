@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../calendario y barra busqueda/calendario.css">
+</head>
+
+<body>
+
+    <!-- DATEPICKER - HTML -->
+    <div class="date-picker-container">
+        
+        <button id="openCalendarBtn" class="date-button" type="button" aria-haspopup="dialog" aria-expanded="false">
+            <span class="calendar-icon" aria-hidden="true">
+                <!-- icono calendar (inline SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <path d="M16 2v4M8 2v4M3 10h18"></path>
+                </svg>
+            </span>
+            <span id="dateText">Fecha de entrada — Fecha de salida</span>
+        </button>
+
+        <div id="calendar" class="calendar hidden" role="dialog" aria-modal="false" aria-label="Selector de fechas">
+            <div class="calendar-header">
+                <button id="prevBtn" class="nav-btn" type="button" aria-label="Mes anterior">&laquo;</button>
+                <div id="currentLabel" class="clickable" role="button" aria-pressed="false"></div>
+                <button id="nextBtn" class="nav-btn" type="button" aria-label="Mes siguiente">&raquo;</button>
+            </div>
+
+            <div class="week-names calendar-grid" aria-hidden="true">
+                <div>Do</div>
+                <div>Lu</div>
+                <div>Ma</div>
+                <div>Mi</div>
+                <div>Ju</div>
+                <div>Vi</div>
+                <div>Sá</div>
+            </div>
+
+            <div id="calendarDays" class="calendar-grid" aria-live="polite"></div>
+
+            <div id="monthGrid" class="grid hidden" aria-hidden="true"></div>
+            <div id="yearGrid" class="grid hidden" aria-hidden="true"></div>
+        </div>
+    </div>
+
+
+
+    <script src="../calendario y barra busqueda/calendario.js"></script>
+
+
+
+
+
+</body>
+
+</html>
