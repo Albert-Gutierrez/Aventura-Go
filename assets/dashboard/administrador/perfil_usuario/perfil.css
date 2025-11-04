@@ -289,8 +289,8 @@ form #perfil p {
     letter-spacing: 0.5px;
 }
 
-/* ========== FORMULARIO DE DATOS ========== */
-.datos {
+/* ==========DATOS ========== */
+.datos, .editar, .ajustes, form.cambiar{
     background: #f5f5f5;
     width: 57%;
     padding: 30px;
@@ -300,59 +300,39 @@ form #perfil p {
     position: relative;
 }
 
+.datos h3{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
 .datos h4 {
+    padding: 0 30px;
     font-size: 15px;
     color: #2D4059;
     font-weight: 700;
-    margin-bottom: 8px;
-    grid-column: span 1;
+    margin-bottom: 30px;
 }
 
 .datos p{
+    padding: 0 30px;
     font-size: 15px;
     color: #000000;
-    margin-bottom: 8px;
-    grid-column: span 1;
+    margin-bottom: 30px;
 }
 
-/* ========== BOTONES INFERIORES ========== */
-.botones {
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 162px;
+/* Editar */
+.editar h4{
+    text-align: center;
+    columns: #000000;
 }
 
-.botones button {
-    width: 200px;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 300;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.datos, .editar, .ajustes, .cambiar{
+    display: none;
 }
 
-.botones button:first-child {
-    background-color: #2D4059;
-    color: #ffffff;
-}
-
-.botones button:first-child:hover {
-    background-color: #2c3e50;
-    transform: translateY(-2px);
-}
-
-.botones button:last-child {
-    background-color: #EA8217;
-    color: #ffffff;
-}
-
-.botones button:last-child:hover {
-    background-color: #ff7a29;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+.activa{
+    display: block;
 }
 
 /* ========== RESPONSIVE ========== */
