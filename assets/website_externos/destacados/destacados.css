@@ -91,6 +91,29 @@ header {
   border-radius: 5px;
 }
 
+/* Input de búsqueda dentro de la barra */
+#input-busqueda {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+  font-size: 14px;
+  width: 100%;
+  font-family: inherit;
+}
+
+/* Placeholder más suave */
+#input-busqueda::placeholder {
+  color: #999;
+}
+
+/* Efecto al escribir */
+#input-busqueda:focus {
+  border-bottom: 1px solid #ff6600; /* línea naranja al enfocar */
+  transition: border-color 0.3s ease;
+}
+
+
 /* Botones */
 .actions {
   display: flex;
@@ -269,7 +292,7 @@ header {
 }
 .fuera-hero {
   position: relative;
-  top: -40px; /* sube un poco para que toque el borde del hero */
+  top: -29px; /* sube un poco para que toque el borde del hero */
   margin: 0 auto; /* centra horizontalmente */
   width: 80%;
   max-width: 900px;
@@ -282,7 +305,7 @@ header {
   gap: 16px;
   padding: 12px 25px;
   z-index: 10;
-  left: 34%;
+  left: 18%;
   transform: translateX(-50%); /* ✅ centra horizontalmente */
 }
 
@@ -465,7 +488,8 @@ header {
   font-family: var(--font-titles);
   font-size: 28px;
   font-weight: 400;
-  margin-left: 315px;
+  margin-left: -200px;
+  padding: 10PX 60px;
 }
 
 .footer-top a {
@@ -477,7 +501,7 @@ header {
   border-radius: 20px;
   padding: 10px 20px;
   transition: transform 0.3s ease;
-  margin-right: 375px;
+  margin-right: 195 px;
 }
 
 .footer-top a:hover {

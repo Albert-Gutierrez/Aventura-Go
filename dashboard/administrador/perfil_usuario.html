@@ -11,7 +11,8 @@
     <!-- Icono de bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="../../assets/dashboard/administrador/perfil.css">
+    <link rel="stylesheet" href="../../assets/dashboard/administrador/perfil_usuario/perfil.css">
+    <link rel="shortcut icon" href="../../assets/dashboard/administrador/perfil_usuario/img/FAVICON.png">
 </head>
 
 <body>
@@ -20,32 +21,32 @@
 
         <div class="panel">
 
-            <img src="../../assets/dashboard/administrador/img/LOGO-POSITIVO 2 (1).png" alt="logo">
+            <img src="../../assets/dashboard/administrador/perfil_usuario/img/LOGO-POSITIVO 2 (1).png" alt="logo">
 
             <div class="items">
 
                 <a href="">
-                    <img src="../../assets/dashboard/administrador/img/inicio.png" alt="inicio">
+                    <img src="../../assets/dashboard/administrador/perfil_usuario/img/inicio.png" alt="inicio">
                     <p>Inicio</p>
                 </a>
                 <a href="">
-                    <img src="../../assets/dashboard/administrador/img/tours.png" alt="tours">
+                    <img src="../../assets/dashboard/administrador/perfil_usuario/img/tours.png" alt="tours">
                     <p>Tours</p>
                 </a>
                 <a href="">
-                    <img src="../../assets/dashboard/administrador/img/destino 2.png" alt="destinos">
+                    <img src="../../assets/dashboard/administrador/perfil_usuario/img/destino 2.png" alt="destinos">
                     <p>Destinos</p>
                 </a>
                 <a href="">
-                    <img src="../../assets/dashboard/administrador/img/Dashboard.png" alt="dashboard">
+                    <img src="../../assets/dashboard/administrador/perfil_usuario/img/Dashboard.png" alt="dashboard">
                     <p>Dashboard</p>
                 </a>
                 <a href="../administrador/listado_reservas.html">
-                    <img src="../../assets/dashboard/administrador/img/listado.png" alt="listado">
+                    <img src="../../assets/dashboard/administrador/perfil_usuario/img/listado.png" alt="listado">
                     <p>Listado de Reservas</p>
                 </a>
-                <a href="">
-                    <img src="../../assets/dashboard/administrador/img/historial.png" alt="historial">
+                <a href="../administrador/historial_reservas.html">
+                    <img src="../../assets/dashboard/administrador/perfil_usuario/img/historial.png" alt="historial">
                     <p>Historial de reservas</p>
                 </a>
 
@@ -59,23 +60,24 @@
                 <input type="text">
                 <i class="bi bi-search"></i>
 
-                <button id="estilo"><i class="bi bi-moon-fill"></i></button>
-                <button id="estilo"><i class="bi bi-bell-fill"></i></button>
+                <button id="modoOscuroBtn"> <i class="bi bi-moon-fill"></i></button>
+                <button id="notificacionesBtn"> <i class="bi bi-bell-fill"></i></button>
 
                 <!-- Dropdown con Bootstrap -->
                 <div class="dropdown" id="perfil-dropdown">
                     <a href="#" id="perfil" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../../assets/dashboard/administrador/img/perfil.png" alt="persona">
+                        <img src="../../assets/dashboard/administrador/perfil_usuario/img/perfil.png" alt="persona">
                         <p>AR-Ana</p>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="../../dashboard/administrador/perfil_usuario.html"><i class="bi bi-person"></i> Mi
-                            Perfil</a>
+                        <li><a class="dropdown-item" href="../../dashboard/administrador/perfil_usuario.html"><i
+                                    class="bi bi-person"></i> Mi
+                                Perfil</a>
                         </li>
                         <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="../../index.html"><i class="bi bi-box-arrow-right"></i>
-                            Cerrar Sesión</a>
+                                Cerrar Sesión</a>
                         </li>
                     </ul>
                 </div>
@@ -86,67 +88,120 @@
 
                     <div class="usuario">
                         <h2>Perfil de Usuario</h2>
-                        <img src="../../assets/dashboard/administrador/img/perfil-usuario.png" alt="persona"><i
-                            class="bi bi-pen-fill"></i>
+                        <img src="../../assets/dashboard/administrador/perfil_usuario/img/perfil-usuario.png"
+                            alt="persona"><i class="bi bi-pen-fill"></i>
                         <h3>ANDRES RODRIGUEZ</h3>
-                        <p>andresito22@gmail .com</p>
+                        <p>Administrador</p>
+                        <i class="bi bi-facebook"></i>
 
-                        <button>INFORMACIÓN PERSONAL</button>
-                        <button>CONTRASEÑA Y SEGURIDAD</button>
-                        <button><a href="../../index.html">CERRAR SESIÓN</a></button>
+                        <button>Descripción General</button>
+                        <button>Editar Perfil</button>
+                        <button>Ajustes</button>
+                        <button>Cambiar Contraseña</button>
                     </div>
 
-                    <form action="datos" id="datos">
+                    <!-- <div class="datos">
+                        
+                        <h3>Detalles Del Perfil</h3>
+                
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4>Nombres</h4>
-                                <input type="text" placeholder="Andres Felipe">
-                            </div>
-                            <div class="col-md-6">
-                                <h4>Apellidos</h4>
-                                <input type="text" placeholder="Rodriguez Rodriguez">
-                            </div>
+                        <h4>Nombre Completo</h4>
+                        <p>Kevin Anderson</p>
 
-                            <div class="col-md-12">
-                                <h4>Correo</h4>
-                                <input type="text" id="espacio" placeholder="andresito22@gmail.com">
-                            </div>
-                            <div class="col-md-12">
-                                <h4>Direccion</h4>
-                                <input type="text" id="espacio" placeholder="Cra 1 N*3-22 Sur">
-                            </div>
+                        <h4>Correo Electrónico</h4>
+                        <p>Kevin Anderson</p>
 
-                            <div class="col-md-6">
-                                <h4>Telefono</h4>
-                                <input type="text" placeholder="3204567894">
-                            </div>
-                            <div class="col-md-6">
-                                <h4>Fecha de nacimiento</h4>
-                                <input type="text" placeholder="01/10/1999"><i class="bi bi-calendar3"></i>
-                            </div>
+                        <h4>Teléfono</h4>
+                        <p>Kevin Anderson</p>
 
-                            <div class="col-md-6">
-                                <h4>Ubicación</h4>
-                                <input type="text" placeholder="Bogotá, Colombia">
-                            </div>
+                        <h4>Dirección</h4>
+                        <p>Kevin Anderson</p>
+
+                        <h4>Rol</h4>
+                        <p>Administrador</p>
+
+                        <h4>Identificacion</h4>
+                        <p>K1002006049</p>
+
+                    </div> -->
+
+                    <!-- <div class="editar">
+
+                        <h4>Imagen Perfil</h4>
+                        <img src="../../assets/dashboard/administrador/perfil_usuario/img/perfil-usuario.png" alt="">
+
+                        <button>descargar</button>
+                        <button>eliminar</button>
+
+                        <form action="">
+                            <h4>Nombre Completo</h4>
+                            <input type="text" placeholder="Kevin Anderson">
+
+                            <h4>Correo Electrónico</h4>
+                            <input type="text" placeholder="">
+
+                            <h4>Teléfono</h4>
+                            <input type="number" placeholder="">
+
+                            <h4>Dirección</h4>
+                            <input type="text" placeholder="">
+
+                            <h4>Identificacion</h4>
+                            <input type="text" placeholder="">
+
+                            <h4>Perfil Facebook</h4>
+                            <input type="text" placeholder="">
+
+                            <h4>Perfil Instagram</h4>
+                            <input type="text" placeholder="">
+
+                            <h4>Perfil LinkedIn</h4>
+                            <input type="text" placeholder="">
+
+                        </form>
+                    </div> -->
+
+                    <!-- <div class="ajustes">
+
+                        <h3>Notificaciones por Correo Electronico</h3>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                            <label class="form-check-label" for="checkChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                            <label class="form-check-label" for="checkChecked">
+                                Checked checkbox
+                            </label>
                         </div>
 
-                        <div class="botones">
-                            <button>Descartar Cambios</button>
-                            <button>Guardar Cambios</button>
-                        </div>
+                        <button>Guardar Cambios</button>
 
-                    </form>
+                    </div> -->
 
+                    <!-- <form action="cambiar">
+                        <h4>Contraseña Actual</h4>
+                        <input type="text">
+
+                        <h4>nueva contraseña</h4>
+                        <input type="text">
+
+                        <h4>Confirmar Contraseña</h4>
+                        <input type="text">
+
+                        <button>Cambiar Contraseña</button>
+                    </form> -->
                 </div>
             </div>
-
-
-
-
-
-
 
         </div>
 
@@ -157,6 +212,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="../../assets/dashboard/administrador/perfil_usuario/perfil.js"></script>
 
 </body>
 

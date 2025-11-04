@@ -114,7 +114,8 @@ form .bi-search {
     pointer-events: none;
 }
 
-#estilo {
+#modoOscuroBtn,
+#notificacionesBtn {
     margin-bottom: 16px;
     margin-left: 10px;
     padding: 7px 20px;
@@ -264,8 +265,7 @@ form #perfil p {
     color: #ffffff;
     border: none;
     border-radius: 8px;
-    font-weight: 600;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
     margin-bottom: 10px;
     transition: all 0.3s ease;
@@ -290,7 +290,8 @@ form #perfil p {
 }
 
 /* ========== FORMULARIO DE DATOS ========== */
-form#datos {
+.datos {
+    background: #f5f5f5;
     width: 57%;
     display: inline-grid !important;
     padding: 30px;
@@ -299,57 +300,19 @@ form#datos {
     position: relative;
 }
 
-form#datos h4 {
-    font-size: 14px;
-    color: #000000;
-    font-weight: 600;
+.datos h4 {
+    font-size: 15px;
+    color: #2D4059;
+    font-weight: 700;
     margin-bottom: 8px;
     grid-column: span 1;
 }
 
-form#datos input {
-    width: 250px;
-    padding: 12px 15px;
-    background-color: #DEE6F2;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-    color: #374151;
-}
-
-form#datos #espacio {
-    width: 545px;
-    padding: 12px 15px;
-    background-color: #DEE6F2;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    outline: none;
-    color: #374151;
-}
-
-form#datos input::placeholder {
-    color: #9ca3af;
-}
-
-form#datos input:focus {
-    box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.2);
-}
-
-/* Campo con icono de calendario */
-form#datos input:nth-of-type(6) {
-    position: relative;
-}
-
-form#datos .bi-calendar3 {
-    position: absolute;
-    right: 43%;
-    top: 55%;
-    transform: translateX(230px);
-    color: #95a5a6;
-    font-size: 16px;
-    pointer-events: none;
+.datos p{
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 8px;
+    grid-column: span 1;
 }
 
 /* ========== BOTONES INFERIORES ========== */
@@ -408,7 +371,7 @@ form#datos .bi-calendar3 {
         width: 100%;
     }
 
-    form#datos {
+    .datos {
         grid-template-columns: 1fr;
     }
 
@@ -423,4 +386,39 @@ form#datos .bi-calendar3 {
     .botones button {
         width: 100%;
     }
+}
+
+/* modo oscuro */
+.modo-oscuro .panel{
+    background: #2a2828;
+}
+
+.modo-oscuro .info {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.modo-oscuro form input{
+    background: #2a2828;
+}
+
+.modo-oscuro #modoOscuroBtn,
+.modo-oscuro #notificacionesBtn{
+    background: #EA8217;
+}
+
+.modo-oscuro .usuario{
+    background: #2a2828;
+}
+
+.modo-oscuro form#datos h4{
+    color: #ffffff;
+}
+
+.modo-oscuro form#datos input{
+    background: #2a2828;
+}
+
+.modo-oscuro form#datos #espacio{
+    background: #2a2828;
 }
