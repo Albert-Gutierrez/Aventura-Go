@@ -293,9 +293,9 @@ form #perfil p {
 .datos {
     background: #f5f5f5;
     width: 57%;
-    display: inline-grid !important;
     padding: 30px;
     border-radius: 15px;
+    margin-left: 20px;
     margin-bottom: 20px;
     position: relative;
 }
