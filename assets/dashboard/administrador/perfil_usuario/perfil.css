@@ -289,7 +289,14 @@ form #perfil p {
     letter-spacing: 0.5px;
 }
 
-/* ==========DATOS ========== */
+/* ==========Secciones========== */
+.datos, .editar, .ajustes, .cambiar{
+    display: none;
+}
+
+.activa{
+    display: block;
+}
 .datos, .editar, .ajustes, form.cambiar{
     background: #f5f5f5;
     width: 57%;
@@ -300,6 +307,7 @@ form #perfil p {
     position: relative;
 }
 
+/* ==========DATOS ========== */
 .datos h3{
     text-align: center;
     color: #000000;
@@ -327,13 +335,32 @@ form #perfil p {
     columns: #000000;
 }
 
-.datos, .editar, .ajustes, .cambiar{
-    display: none;
+.editar #descargar{
+    border: none;
+    padding: 5px;
+    background-color: #2D4059;
+    color: #FFFFFF;
+    border-radius: 10px;
 }
 
-.activa{
-    display: block;
+.editar #descargar:hover{
+    background-color: #4b75a0;
 }
+
+.editar #eliminar{
+    border: none;
+    padding: 5px;
+    background-color: red;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.editar #eliminar:hover{
+    background-color: #850909;
+}
+
+
+
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
