@@ -40,7 +40,6 @@
                 <!-- Menú principal -->
                 <ul class="navbar-nav" id="navbarNav">
                     <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="destinos.html">Destinos</a></li>
                     <li><a class="nav-link" href="destacados.html">Destacados</a></li>
                     <li><a class="nav-link" href="acerca_de_nosotros.html">Acerca de nosotros</a></li>
                     <li><a class="nav-link active" href="contactanos.html">Contáctanos</a></li>
@@ -78,22 +77,20 @@
 
             <div class="row hero-info">
                 <div class="col-12 col-sm-4 col-md-4 text-center p-3">
-                    <img src="../assets/website_externos/contactanos/img/hero_icon_email.png" class="icono-email vibrar"
+                    <img src="../assets/website_externos/contactanos/img/hero_icon_email.png" class="icono-email"
                         alt="icono hero_icon_email">
                     <h2 class="h2-email">E-mail</h2>
                     <h3 class="h3-email">aventura_go@gmail.com</h3>
                     <h3 class="h3-email">aventurago.2025@gmail.com</h3>
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 text-center p-3">
-                    <img src="../assets/website_externos/contactanos/img/hero_icon_phone.png" class="vibrar"
-                        alt="icono hero_icon_phone">
+                    <img src="../assets/website_externos/contactanos/img/hero_icon_phone.png" alt="icono hero_icon_phone">
                     <h2>Telefono</h2>
                     <h3>+57 320 123 4567</h3>
                     <h3>+57 310 987 6543</h3>
                 </div>
                 <div class="col-12 col-sm-4 col-md-4 text-center p-3">
-                    <img src="../assets/website_externos/contactanos/img/hero_icon_lugar.png" class="vibrar"
-                        alt="icono hero_icon_lugar">
+                    <img src="../assets/website_externos/contactanos/img/hero_icon_lugar.png" alt="icono hero_icon_lugar">
                     <h2>Direccion</h2>
                     <h3>Villeta, Cundinamarca</h3>
                     <h3>Colombia</h3>
@@ -106,77 +103,81 @@
 
 
     <!-- SECCIÓN FORMULARIO DE CONTACTO -->
-    <div id="formulario" class="container">
+    <div id="formulario">
 
-        <h2 class="titulo-principal">Aclarámos tus dudas, escríbenos</h2>
+        <div class="container">
 
-        <div class="formulario-completo">
+            <h2 class="titulo-principal">Aclarámos tus dudas, escríbenos</h2>
 
-            <!-- SECCIÓN IZQUIERDA - IMAGEN Y TEXTO AZUL -->
-            <div class="seccion-izquierda">
-                <img src="../assets/website_externos/contactanos/img/img_formulario.png" alt="img form">
-                <p class="p1">¿No sabes qué destino elegir?</p>
-                <p class="p2 palpitando"><strong>Nosotros podemos ayudarte</strong></p>
-            </div>
+            <div class="formulario-completo">
 
-            <!-- SECCIÓN DERECHA - FORMULARIO -->
-            <div class="seccion-derecha">
-                <h2>Formulario de contacto</h2>
-                <p class="descripcion">
-                    Nuestro compromiso es brindarte toda la orientación y apoyo que necesitas para hacer de tu
-                    experiencia algo extraordinario. Diligencia tus datos y te responderemos lo más pronto posible.
-                </p>
+                <!-- SECCIÓN IZQUIERDA - IMAGEN Y TEXTO AZUL -->
+                <div class="seccion-izquierda">
+                    <img src="../assets/website_externos/contactanos/img/img_formulario.png" alt="img form">
+                    <p class="p1">¿No sabes qué destino elegir?</p>
+                    <p class="p2 palpitando"><strong>Nosotros podemos ayudarte</strong></p>
+                </div>
 
-                <form action="https://formsubmit.co/aventurago.contacto@gmail.com" method="post">
-                    <!-- PRIMERA FILA - 2 COLUMNAS -->
-                    <div class="fila-campos">
-                        <div class="campo">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" placeholder="Ej: María Pérez" required>
+                <!-- SECCIÓN DERECHA - FORMULARIO -->
+                <div class="seccion-derecha">
+                    <h2>Formulario de contacto</h2>
+                    <p class="descripcion">
+                        Nuestro compromiso es brindarte toda la orientación y apoyo que necesitas para hacer de tu
+                        experiencia algo extraordinario. Diligencia tus datos y te responderemos lo más pronto posible.
+                    </p>
+
+                    <form action="https://formsubmit.co/aventurago.contacto@gmail.com" method="post">
+                        <!-- PRIMERA FILA - 2 COLUMNAS -->
+                        <div class="fila-campos">
+                            <div class="campo">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" placeholder="Ej: María Pérez" required>
+                            </div>
+                            <div class="campo">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" placeholder="Ej: +57 320 123 4567" required>
+                            </div>
                         </div>
-                        <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" placeholder="Ej: +57 320 123 4567" required>
+
+                        <!-- SEGUNDA FILA - 2 COLUMNAS -->
+                        <div class="fila-campos">
+                            <div class="campo">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Ej: sucorreo@correo.com" required>
+                            </div>
+                            <div class="campo">
+                                <label for="objeto">Objeto de la pregunta</label>
+                                <input type="text" id="objeto" placeholder="Ej: Consulta general" required>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- SEGUNDA FILA - 2 COLUMNAS -->
-                    <div class="fila-campos">
-                        <div class="campo">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Ej: sucorreo@correo.com" required>
+                        <!-- TERCERA FILA - 1 COLUMNA -->
+                        <div class="fila-campos">
+                            <div class="campo-full">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" rows="4" placeholder="Ej: El siguiente mensaje es para..."
+                                    required></textarea>
+                            </div>
                         </div>
-                        <div class="campo">
-                            <label for="objeto">Objeto de la pregunta</label>
-                            <input type="text" id="objeto" placeholder="Ej: Consulta general" required>
-                        </div>
-                    </div>
-
-                    <!-- TERCERA FILA - 1 COLUMNA -->
-                    <div class="fila-campos">
-                        <div class="campo-full">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" rows="4" placeholder="Ej: El siguiente mensaje es para..."
-                                required></textarea>
-                        </div>
-                    </div>
 
 
-                    <!-- Configuración de FormSubmit para que aparezca mensaje de gracias al enviar el formulario de contacto -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next"
-                        value="https://albert-gutierrez.github.io/Aventura-Go/website_externos/contactanos_gracias.html">
+                        <!-- Configuración de FormSubmit para que aparezca mensaje de gracias al enviar el formulario de contacto -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://albert-gutierrez.github.io/Aventura-Go/website_externos/contactanos_gracias.html">
 
-                    <!-- BOTÓN se acrivara cuando sea funcional-->
-                    <!-- <button type="submit" class="btn-enviar vibrar">Enviar mensaje</button> -->
+                        <!-- BOTÓN se acrivara cuando sea funcional-->
+                        <!-- <button type="submit" class="btn-enviar">Enviar mensaje</button> -->
 
-                    <!-- boton provisional de reemplazo, direeciona ala pagina de gracias luego de enviar el formulario-->
-                    <button type="submit" class="btn-enviar vibrar" onclick="window.location.href='../website_externos/contactanos_gracias.html'">
-                        Enviar mensaje
-                    </button>
+                        <!-- boton provisional de reemplazo, direeciona ala pagina de gracias luego de enviar el formulario-->
+                        <button type="submit" class="btn-enviar"
+                            onclick="window.location.href='../website_externos/contactanos_gracias.html'">
+                            Enviar mensaje
+                        </button>
 
 
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -197,96 +198,99 @@
 
 
     <!-- F O O T E R_____________________________________________________________________________________________________________________________ -->
-    <footer id="footer" class="container-fluid">
+    <footer id="footer">
 
-        <!-- footer superior -->
-        <div class="footer-top">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <h2 class="palpitando">¿Quieres que tu negocio aparezca aquí?</h2>
-                    <a href="../index.html">Publicate en Aventura Go</a>
+        <div class="container-fluid">
+
+            <!-- footer superior -->
+            <div class="footer-top">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2 class="palpitando">¿Quieres que tu negocio aparezca aquí?</h2>
+                        <a href="../index.html">Publicate en Aventura Go</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Inferior -->
+            <div class="footer-bottom">
+                <div class="row">
+
+                    <!-- Columna 1: Logo -->
+                    <div class="col-md-2">
+                        <div class="logo-section">
+                            <img src="../assets/website_externos/contactanos/img/LOGO-NEGATIVO.png"
+                                alt="logo Aventura Go">
+                        </div>
+                    </div>
+
+                    <!-- col 2 Descripción  -->
+                    <div class="col-md-2">
+                        <p class="description">
+                            Aventura Go, somos una plataforma de turismo que conecta viajeros con experiencias
+                            únicas de aventura. Promovemos el turismo sostenible, apoyamos a prestadores locales y
+                            ofrecemos actividades seguras y memorables en destinos naturales.
+                        </p>
+                    </div>
+
+
+                    <!-- Columna 3: Destinos -->
+                    <div class="col-md-2">
+                        <h5 class="dest-section">Destinos</h5>
+                        <ul class="list-unstyled">
+                            <li>Villeta</li>
+                            <li>Utica</li>
+                            <li>La Vega</li>
+                            <li>San Francisco</li>
+                            <li>Tobia</li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 4: Enlaces Útiles -->
+                    <div class="col-md-2">
+                        <h5 class="enlaces-section">Enlaces útiles</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Travel Blog</a></li>
+                            <li><a href="#">Be Our Partner</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 5: Contacto -->
+                    <div class="col-md-2">
+                        <h5 class="contacto-section">Contactos</h5>
+                        <ul class="list-unstyled contact-list">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>321 2263435</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>aventurago2025@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Villeta Cundinamarca</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 6: Redes Sociales -->
+                    <div class="col-md-2">
+                        <h5 class="redes-section">Síguenos</h5>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <!-- Footer Inferior -->
-        <div class="footer-bottom">
-            <div class="row">
-
-                <!-- Columna 1: Logo -->
-                <div class="col-md-2">
-                    <div class="logo-section">
-                        <img src="../assets/website_externos/contactanos/img/LOGO-NEGATIVO.png" alt="logo Aventura Go">
-                    </div>
-                </div>
-
-                <!-- col 2 Descripción  -->
-                <div class="col-md-2">
-                    <p class="description">
-                        Aventura Go, somos una plataforma de turismo que conecta viajeros con experiencias
-                        únicas de aventura. Promovemos el turismo sostenible, apoyamos a prestadores locales y
-                        ofrecemos actividades seguras y memorables en destinos naturales.
-                    </p>
-                </div>
-
-
-                <!-- Columna 3: Destinos -->
-                <div class="col-md-2">
-                    <h5 class="dest-section">Destinos</h5>
-                    <ul class="list-unstyled">
-                        <li>Villeta</li>
-                        <li>Utica</li>
-                        <li>La Vega</li>
-                        <li>San Francisco</li>
-                        <li>Tobia</li>
-                    </ul>
-                </div>
-
-                <!-- Columna 4: Enlaces Útiles -->
-                <div class="col-md-2">
-                    <h5 class="enlaces-section">Enlaces útiles</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Travel Blog</a></li>
-                        <li><a href="#">Be Our Partner</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- Columna 5: Contacto -->
-                <div class="col-md-2">
-                    <h5 class="contacto-section">Contactos</h5>
-                    <ul class="list-unstyled contact-list">
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>321 2263435</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>aventurago2025@gmail.com</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Villeta Cundinamarca</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Columna 6: Redes Sociales -->
-                <div class="col-md-2">
-                    <h5 class="redes-section">Síguenos</h5>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
 
     </footer>
 
