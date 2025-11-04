@@ -455,12 +455,16 @@ textarea {
 
 /* E S T I L O S    F O O T E R-_________________________________________________________________________________________ */
 /* footer superior */
+.container-fluid{
+    width: 100%;
+    padding: 0;
+}
+
 .footer-top {
     width: 100%;
     align-content: center;
     background-color: #2D4059;
     color: white;
-    padding: 5px 0;
 }
 
 
@@ -468,7 +472,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 0;
+    margin: 0;
 }
 
 .footer-top h2 {
