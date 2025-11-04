@@ -1,0 +1,446 @@
+/*FUENTES CALENDARIO*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Lato:wght@400;700&display=swap');
+/* FUENTES RESERVAS */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+/* VARIABLES */
+:root {
+    --color-primary: #2d4059;
+    --color-secondary: #ea8217;
+    --color-white: #ffffff;
+    --color-bg-light: #f8f9fa;
+    --color-border: #e0e0e0;
+    --color-text: #2b2b2b;
+
+    --font-titles: "Raleway", sans-serif;
+    --font-text: "Lato", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* ESTILOS DEL CALENDARIO DESDE ACA ____________________________________________________________________________________________________*/
+/*CONTENEDOR*/
+.date-picker-container {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+/*BOTÓN PRINCIPAL*/
+.date-button {
+    background-color: #FFFFFF;
+    border: 2px solid #EA8217;
+    color: #999;
+    font-family: 'Lato', sans-serif;
+    padding: 12px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    transition: all .2s ease;
+    width: fit-content;
+}
+
+.date-button:hover {
+    background-color: #FFF3E4;
+    border-color: #EA8217;
+}
+
+/* icono */
+.calendar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CALENDARIO PANEL*/
+.calendar {
+    position: absolute;
+    top: 60px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    width: 360px;
+    z-index: 999;
+    animation: fadeIn .15s ease-out;
+}
+
+/* animación entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/*ENCABEZADO MES/AÑO*/
+.calendar-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2D4059;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background .2s;
+    border: none;
+    background: none;
+}
+
+.nav-btn:hover {
+    background-color: #F0F0F0;
+}
+
+/* clickable label */
+#currentLabel {
+    cursor: pointer;
+    padding: 10px 8px;
+    border-radius: 6px;
+}
+
+#currentLabel:hover {
+    background-color: #F0F0F0;
+}
+
+/*GRID DÍAS*/
+.week-names {
+    font-weight: bold;
+    color: #777;
+    font-size: 14px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* celdas */
+.calendar-grid div {
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .15s ease;
+}
+
+/* días hover */
+.calendar-grid div:not(.disabled):hover {
+    background-color: #EA8217;
+    color: #FFFFFF;
+}
+
+/* deshabilitados (días pasados) */
+.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/* fecha seleccionada */
+.selected {
+    background-color: #2D4059 !important;
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+
+/* rango entre fechas (si luego activas eso) */
+.range {
+    background-color: #EA8217 !important;
+    color: #FFFFFF !important;
+}
+
+/* MESES & AÑOS VISTAS  */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    text-align: center;
+    margin-top: 12px;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 10px;
+}
+
+.grid div {
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .15s ease;
+}
+
+.grid div:hover:not(.disabled) {
+    background-color: #EA8217;
+    color: #FFFFFF;
+}
+
+/* Mes/Año seleccionado */
+.month-cell.selected,
+.year-cell.selected {
+    background-color: #2D4059;
+    color: #FFF;
+}
+
+/* SCROLL Si es muy pequeño el viewport */
+@media(max-height: 500px) {
+    .calendar {
+        overflow-y: auto;
+        max-height: 350px;
+    }
+}
+/* TERMINA ESTILOS DEL CALENDARIO__________________________________________________________________________________________________ */
+
+
+
+/* ESTILOS BARRA RESERVASPERSONAS Y HABITACION_____________________________________________________________________________________ */
+
+/* Input de búsqueda */
+#input-busqueda {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+    font-family: inherit;
+}
+
+#input-busqueda::placeholder {
+    color: #999;
+}
+
+#input-busqueda:focus {
+    border-bottom: 1px solid #ff6600;
+    transition: border-color 0.3s ease;
+}
+
+/* Caja de búsqueda completa */
+.search-box {
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 900px;
+    padding: 10px 25px;
+    z-index: 3;
+    gap: 16px;
+}
+
+.fuera-hero {
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 25px;
+}
+
+/* Items */
+.search-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    position: relative;
+}
+
+.search-item:last-child {
+    border-right: none;
+}
+
+.search-item i {
+    font-size: 18px;
+    color: var(--color-secondary);
+}
+
+.search-item p {
+    font-family: var(--font-text);
+    color: #888;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Botón buscar */
+.btn-buscar {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-family: var(--font-titles);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-buscar:hover {
+    transform: scale(1.05);
+    background: var(--color-secondary);
+}
+
+/* Botón invitados */
+.guest-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-text);
+    color: #888;
+    font-size: 13px;
+    padding: 0;
+    text-align: left;
+}
+
+.guest-button:hover {
+    color: var(--color-secondary);
+}
+
+/* Panel invitados */
+.guest-panel {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    min-width: 400px;
+}
+
+.guest-panel.hidden {
+    display: none;
+}
+
+.guest-panel .contenedor-reservas {
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    width: 100%;
+    padding: 14px;
+}
+
+.guest-panel .contenedor-blanco {
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.guest-panel .contenedor-blanco h2 {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    margin: 0;
+}
+
+.guest-panel .grupo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.guest-panel .info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.guest-panel .icono img {
+    width: 36px;
+    height: 36px;
+}
+
+.guest-panel .contador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guest-panel .btn-menos,
+.guest-panel .btn-mas {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1.5px solid #ccc;
+    background-color: var(--color-white);
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.guest-panel .valor {
+    width: 28px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.guest-panel .franja-azul {
+    background-color: var(--color-primary);
+    height: 12px;
+    border-radius: 6px;
+    margin: 6px 0;
+}
+
+.guest-panel .resumen {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guest-panel #btn-confirmar {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+}
