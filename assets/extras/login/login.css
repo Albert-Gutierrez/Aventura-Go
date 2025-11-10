@@ -1,3 +1,18 @@
+:root {
+  /*  Paleta de colores */
+  --color-primary: #2D4059;     /* Azul oscuro principal */
+  --color-secondary: #EA8217;   /* Naranja secundario */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-bg-light: #F8F9FA;
+  --color-border: #E0E0E0;
+
+    /*  Tipografías oficiales */
+    --font-titles: 'Raleway', sans-serif;
+    --font-text: 'Lato', sans-serif;
+} 
 /* Fondo con capa oscura */
 body {
     margin: 0;
@@ -109,22 +124,23 @@ input {
 }
 
 /* Botón */
-button {
-    background-color: #EA8217;
-    color: white;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 60px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
 
-button:hover {
-    background-color: #c86f12;
+.btn:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05);
 }
+
 
 /* Enlace registro */
 .register-text {
